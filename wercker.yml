@@ -14,4 +14,3 @@ deploy:
         domain: beardww.github.io/new
         basedir: /public
 
-
