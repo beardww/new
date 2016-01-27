@@ -6,11 +6,10 @@ build:
         theme: herring-cove
         flags: --buildDrafts=true
 deploy:
+  steps:
     - install-packages:
         packages: git ssh-client
-  steps:
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: beardww.github.io
         basedir: public
-
