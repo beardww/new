@@ -1,5 +1,5 @@
 title = "Hugo: A Fast and Flexible Website Generator"
-baseurl = "http://beardww.github.io/new/"
+baseurl = "http://beardww.github.io/"
 MetaDataFormat = "yaml"
 theme = "bourbon"
 pluralizeListTitles = false
