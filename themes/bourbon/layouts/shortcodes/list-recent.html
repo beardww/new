@@ -1,0 +1,5 @@
+{{ $v1 := .Get 0 }}
+{{ $v2 := .Get 1 }}
+{{ range where .Page.Site.Pages.ByDate $v1 $v2 }}
+{{ .Render "summary"}}
+{{ end }}

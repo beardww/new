@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+  <main class="cd-main-content">   
+{{ partial "nav.html" . }}
+<div class="content-wrapper">
+{{.Content}}
+{{ range where .Site.Pages.ByDate "Section" "news" }}
+{{ .Render "summary"}}
+{{ end }}
+</div>
+</main>
+{{ partial "footer.html" . }}

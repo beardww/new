@@ -1,0 +1,106 @@
+title = "Hugo: A Fast and Flexible Website Generator"
+baseurl = "http://beardww.github.io/"
+MetaDataFormat = "yaml"
+theme = "bourbon"
+pluralizeListTitles = false
+
+[params]
+  description = "Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go"
+  author = "Steve Francia (spf13) and friends"
+
+[taxonomies]
+  tag = "tags"
+  group = "groups"
+
+[[menu.main]]
+    name = "News"
+    identifier = "news"
+    active = "active"
+    weight = -100
+[[menu.main]]
+    name = "Content"
+    identifier = "content"
+    weight = -90
+[[menu.main]]
+    name = "Themes"
+    identifier = "themes"
+    weight = -85
+[[menu.main]]
+    name = "Templates"
+    identifier = "layout"
+    weight = -80
+[[menu.main]]
+    name = "Taxonomies"
+    identifier = "taxonomy"
+    weight = -70
+[[menu.main]]
+    name = "Extras"
+    identifier = "extras"
+    weight = -60
+[[menu.resources]]
+    name = "Tutorials"
+    identifier = "tutorials"
+    weight = 300
+[[menu.resources]]
+    name = "Tools"
+    url = "/tools/"
+    identifier = "tools"
+    weight = 400
+[[menu.other]]
+    name = "Cmd Reference"
+    section = "Other Info"
+    identifier = "commands"
+    weight = 500
+    url = "/commands/"
+[[menu.other]]
+    name = "Troubleshooting"
+    identifier = "troubleshooting"
+    weight = 600
+
+# ----------------------------
+# HEADER MENU
+# ----------------------------
+[[menu.header]]
+    name = "Showcases"
+    identifier= "showcases"
+    weight = -110
+[[menu.header]]
+    parent = "showcases"
+    name = "Sites made with Hugo"
+    url = "/showcase"
+[[menu.header]]
+    parent = "showcases"
+    name = "Themes Showcase"
+    url = "http://themes.gohugo.io"
+[[menu.header]]
+    name = "Community"
+    identifier = "community"
+    weight = -50
+[[menu.header]]
+    parent = "community"
+    name = "Discussion Forum"
+    url = "http://discuss.gohugo.io"
+    identifier= "discussion"
+    weight = -150
+[[menu.header]]
+    parent = "community"
+    name = "Issues on Github"
+    url = "https://github.com/spf13/hugo/issues"
+    identifier = 'issues'
+    weight = 10
+[[menu.header]]
+    parent = "community"
+    name = "Press & Articles"
+    url = "/community/press/"
+    identifier = 'press'
+    weight = 200
+[[menu.header]]
+    name = "About Hugo"
+    identifier = "about"
+    weight = -10
+[[menu.header]]
+    parent = "about"
+    name = "Source on Github"
+    url = "http://discuss.gohugo.io"
+    identifier= "github"
+    weight = -150
