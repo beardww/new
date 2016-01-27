@@ -6,6 +6,8 @@ build:
         theme: herring-cove
         flags: --buildDrafts=true
 deploy:
+    - install-packages:
+        packages: git ssh-client
   steps:
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
