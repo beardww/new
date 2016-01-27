@@ -4,7 +4,6 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: bourbon
-        flags: --buildDrafts=true
 deploy:
   steps:
     - install-packages:
