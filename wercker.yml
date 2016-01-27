@@ -2,7 +2,7 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "HEAD"
+        version: "0.14"
         theme: bourbon
         flags: --buildDrafts=true
 deploy:
