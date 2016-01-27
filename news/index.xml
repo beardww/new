@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://beardww.github.io/news/</link>
+    <description>Recent content in News on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://beardww.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cariboo</title>
+      <link>http://beardww.github.io/news/cariboo/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://beardww.github.io/news/cariboo/</guid>
+      <description>
+
+&lt;h2 id=&#34;prince-george:65f0d04c9eb58be382afe232e0b15d2a&#34;&gt;Prince George&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PG101 - News</title>
+      <link>http://beardww.github.io/news/princegeorge/pg101/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://beardww.github.io/news/princegeorge/pg101/</guid>
+      <description>&lt;p&gt;PG101 blah blah&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kootenay</title>
+      <link>http://beardww.github.io/news/kootenay/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://beardww.github.io/news/kootenay/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Note: This quickstart depends on features introduced in Hugo v0.11.  If you have an earlier version of Hugo, you will need to &lt;a href=&#34;http://beardww.github.io/overview/installing/&#34;&gt;upgrade&lt;/a&gt; before proceeding.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nechako</title>
+      <link>http://beardww.github.io/news/nechako/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://beardww.github.io/news/nechako/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Note: This quickstart depends on features introduced in Hugo v0.11.  If you have an earlier version of Hugo, you will need to &lt;a href=&#34;http://beardww.github.io/overview/installing/&#34;&gt;upgrade&lt;/a&gt; before proceeding.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
