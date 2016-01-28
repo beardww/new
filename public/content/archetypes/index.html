@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Archetypes</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children active  content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li class="active ">
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Archetypes</h1>
+
+      
+
+        <div id="toc" class="toc full">            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#example:07fa24dbf391d975a05d4ef88e247309">Example</a>
+<ul>
+<li><a href="#step-1-creating-an-archetype:07fa24dbf391d975a05d4ef88e247309">Step 1. Creating an archetype</a>
+<ul>
+<li><a href="#archetypes-default-md:07fa24dbf391d975a05d4ef88e247309">archetypes/default.md</a></li>
+</ul></li>
+<li><a href="#step-2-using-the-archetype:07fa24dbf391d975a05d4ef88e247309">Step 2. Using the archetype</a>
+<ul>
+<li><a href="#content-post-my-new-post-md:07fa24dbf391d975a05d4ef88e247309">content/post/my-new-post.md</a></li>
+</ul></li>
+<li><a href="#creating-custom-archetypes:07fa24dbf391d975a05d4ef88e247309">Creating custom archetypes</a>
+<ul>
+<li><a href="#archetypes-musician-md:07fa24dbf391d975a05d4ef88e247309">archetypes/musician.md</a></li>
+<li><a href="#content-musician-mozart-md:07fa24dbf391d975a05d4ef88e247309">content/musician/mozart.md</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#using-a-different-front-matter-format:07fa24dbf391d975a05d4ef88e247309">Using a different front matter format</a></li>
+<li><a href="#which-archetype-is-being-used:07fa24dbf391d975a05d4ef88e247309">Which archetype is being used</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>        
+      
+
+      
+
+<p>Hugo v0.11 introduced the concept of a content builder. Using the
+command: <code>hugo new <em>[relative new content path]</em></code>,
+you can start a content file with the date and title automatically set.
+While this is a welcome feature, active writers need more.</p>
+
+<p>Hugo presents the concept of archetypes, which are archetypal content files
+with pre-configured <a href="/content/front-matter">front matter</a> which will
+populate each new content file whenever you run the <code>hugo new</code> command.</p>
+
+<h2 id="example:07fa24dbf391d975a05d4ef88e247309">Example</h2>
+
+<h3 id="step-1-creating-an-archetype:07fa24dbf391d975a05d4ef88e247309">Step 1. Creating an archetype</h3>
+
+<p>In this example scenario, we have a blog with a single content type (blog post).
+We will use ‘tags’ and ‘categories’ for our taxonomies, so let&rsquo;s create an archetype file with ‘tags’ and ‘categories’ pre-defined, as follows:</p>
+
+<h4 id="archetypes-default-md:07fa24dbf391d975a05d4ef88e247309">archetypes/default.md</h4>
+
+<pre><code>+++
+tags = [&quot;x&quot;, &quot;y&quot;]
+categories = [&quot;x&quot;, &quot;y&quot;]
++++
+</code></pre>
+
+<blockquote>
+<p><strong>CAVEAT:</strong>  Some editors (e.g. Sublime, Emacs) do not insert an EOL (end-of-line) character at the end of the file (i.e. EOF).  If you get a <a href="/troubleshooting/strange-eof-error/">strange EOF error</a> when using <code>hugo new</code>, please open each archetype file (i.e.&nbsp;<code>archetypes/*.md</code>) and press <kbd>Enter</kbd> to type a carriage return after the closing <code>+++</code> or <code>---</code> as necessary.</p>
+</blockquote>
+
+<h3 id="step-2-using-the-archetype:07fa24dbf391d975a05d4ef88e247309">Step 2. Using the archetype</h3>
+
+<p>Now, with <code>archetypes/default.md</code> in place, let&rsquo;s create a new post in the <code>post</code> section with the <code>hugo new</code> command:</p>
+
+<pre><code>$ hugo new post/my-new-post.md
+</code></pre>
+
+<p>Hugo would create the file with the following contents:</p>
+
+<h4 id="content-post-my-new-post-md:07fa24dbf391d975a05d4ef88e247309">content/post/my-new-post.md</h4>
+
+<pre><code>+++
+title = &quot;my new post&quot;
+date = &quot;2015-01-12T19:20:04-07:00&quot;
+tags = [&quot;x&quot;, &quot;y&quot;]
+categories = [&quot;x&quot;, &quot;y&quot;]
++++
+</code></pre>
+
+<p>We see that the <code>title</code> and <code>date</code> variables have been added, in addition to the <code>tags</code> and <code>categories</code> variables which were carried over from <code>archetype/default.md</code>.</p>
+
+<p>Congratulations!  We have successfully created an archetype and used it for our new contents. But wait, what if I want to have different variables for another content type, like musicians? No problem.</p>
+
+<h3 id="creating-custom-archetypes:07fa24dbf391d975a05d4ef88e247309">Creating custom archetypes</h3>
+
+<p>Earlier you created a new content type by adding a new subfolder to the content directory. In our case it&rsquo;s name would be <code>content/musician</code>. To use the corresponding archetype you just need to create a file named after the content type called <code>musician.md</code> in the <code>archetypes</code> directory, similar to the one below.</p>
+
+<h4 id="archetypes-musician-md:07fa24dbf391d975a05d4ef88e247309">archetypes/musician.md</h4>
+
+<pre><code>+++
+name = &quot;&quot;
+bio = &quot;&quot;
+genre = &quot;&quot;
++++
+</code></pre>
+
+<p>Now let&rsquo;s create a new musician.</p>
+
+<pre><code>$ hugo new musician/mozart.md
+</code></pre>
+
+<p>This time, Hugo recognizes the custom archetype and uses it instead of the default one. So the generated file&rsquo;s frontmatter now includes the variables <code>name</code>, <code>bio</code> and <code>genre</code>.</p>
+
+<h4 id="content-musician-mozart-md:07fa24dbf391d975a05d4ef88e247309">content/musician/mozart.md</h4>
+
+<pre><code>+++
+title = &quot;mozart&quot;
+date = &quot;2015-08-24T13:04:37+02:00&quot;
+name = &quot;&quot;
+bio = &quot;&quot;
+genre = &quot;&quot;
++++
+</code></pre>
+
+<h2 id="using-a-different-front-matter-format:07fa24dbf391d975a05d4ef88e247309">Using a different front matter format</h2>
+
+<p>By default, the front matter will be created in the TOML format
+regardless of what format the archetype is using.</p>
+
+<p>You can specify a different default format in your site-wide config file
+(e.g. <code>config.toml</code>) using the <code>MetaDataFormat</code> directive.
+Possible values are <code>&quot;toml&quot;</code>, <code>&quot;yaml&quot;</code> and <code>&quot;json&quot;</code>.</p>
+
+<h2 id="which-archetype-is-being-used:07fa24dbf391d975a05d4ef88e247309">Which archetype is being used</h2>
+
+<p>The following rules apply:</p>
+
+<ul>
+<li>If an archetype with a filename that matches the content type being created, it will be used.</li>
+<li>If no match is found, <code>archetypes/default.md</code> will be used.</li>
+<li>If neither is present and a theme is in use, then within the theme:
+
+<ul>
+<li>If an archetype with a filename that matches the content type being created, it will be used.</li>
+<li>If no match is found, <code>archetypes/default.md</code> will be used.</li>
+</ul></li>
+<li>If no archetype files are present, then the one that ships with Hugo will be used.</li>
+</ul>
+
+<p>Hugo provides a simple archetype which sets the <code>title</code> (based on the
+file name) and the <code>date</code> in RFC&nbsp;3339 format based on
+<a href="http://golang.org/pkg/time/#Now"><code>now()</code></a>, which returns the current time.</p>
+
+<blockquote>
+<p><em>Note: <code>hugo new</code> does not automatically add <code>draft = true</code> when the user
+provides an archetype.  This is by design, rationale being that
+the archetype should set its own value for all fields.
+<code>title</code> and <code>date</code>, which are dynamic and unique for each piece of content,
+are the sole exceptions.</em></p>
+</blockquote>
+
+<p>Content type is automatically detected based on the path. You are welcome to declare which type to create using the <code>--kind</code> flag during creation.</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

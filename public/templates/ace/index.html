@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Ace Templates</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children active  layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li class="active ">
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Ace Templates</h1>
+
+      
+
+      <p>In addition to <a href="/templates/go-templates">Go templates</a> and <a href="/templates/amber">Amber</a> templates, Hugo supports the powerful Ace templates.</p>
+
+<p>For template documentation, follow the links from the <a href="https://github.com/yosssi/ace">Ace project</a>.</p>
+
+<ul>
+<li>Ace templates must be named with the ace-suffix, e.g. <code>list.ace</code></li>
+<li>It&rsquo;s possible to use both Go templates and Ace templates side-by-side, and include one into the other</li>
+<li>Full Go template syntax support, including all the useful helper funcs</li>
+<li>Partials can be included both with the Ace and the Go template syntax:
+
+<ul>
+<li><code>= include partials/foo.html .</code><sup class="footnote-ref" id="fnref:e903dfd3240bd859a52c42789dc482bf:ace-theme"><a rel="footnote" href="#fn:e903dfd3240bd859a52c42789dc482bf:ace-theme">1</a></sup></li>
+<li><code>{{ partial &quot;foo&quot; . }}</code></li>
+</ul></li>
+</ul>
+
+<p>One noticeable difference between Ace and the others is the inheritance support through <a href="https://github.com/yosssi/ace/tree/master/examples/base_inner_template">base and inner templates</a>.</p>
+
+<p>In Hugo the base template will be chosen in the following order:</p>
+
+<pre><code>1. &lt;current-path&gt;/&lt;template-name&gt;-baseof.ace, e.g. list-baseof.ace
+2. &lt;current-path&gt;/baseof.ace
+3. _default/&lt;template-name&gt;-baseof.ace, e.g. list-baseof.ace.
+4. _default/baseof.ace
+5. &lt;themedir&gt;/layouts/_default/&lt;template-name&gt;-baseof.ace
+6. &lt;themedir&gt;/layouts/_default/baseof.ace
+</code></pre>
+
+<p>In the above, <code>current-path</code> is where the corresponding inner template lives, <code>list.ace</code>, <code>single.ace</code>, <code>index.ace</code> &hellip;</p>
+
+<pre><code>.:
+index.ace
+
+./blog:
+single.ace
+baseof.ace
+
+./_default:
+baseof.ace  list.ace  single.ace  single-baseof.ace
+</code></pre>
+
+<p>Some examples for the layout files above:</p>
+
+<ul>
+<li>Home page: <code>./index.ace</code> +  <code>./_default/baseof.ace</code></li>
+<li>Single page in the <code>blog</code> section: <code>./blog/single.ace</code> +  <code>./blog/baseof.ace</code></li>
+<li>Single page in another section: <code>./_default/single.ace</code> +  <code>./_default/single-baseof.ace</code></li>
+<li>Taxonomy page in any section: <code>./_default/list.ace</code> +  <code>./_default/baseof.ace</code></li>
+</ul>
+
+<p><strong>Note:</strong> In most cases one <code>baseof.ace</code> in <code>_default</code> will suffice.
+<strong>Note:</strong> An Ace template without a reference to a base section, e.g. <code>= content</code>, will be handled as a standalone template.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:e903dfd3240bd859a52c42789dc482bf:ace-theme">Note that the <code>html</code> suffix is needed, even if the filename is suffixed <code>ace</code>. This does not work from inside a theme, see <a href="https://github.com/spf13/hugo/issues/763">issue 763</a>.
+ <a class="footnote-return" href="#fnref:e903dfd3240bd859a52c42789dc482bf:ace-theme"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://git.w3w.ca/</loc>
+    <lastmod>2015-11-20T20:46:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/goin5minutes/</loc>
+    <lastmod>2015-11-20T20:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/arresteddevops/</loc>
+    <lastmod>2015-11-20T01:46:33-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/readtext/</loc>
+    <lastmod>2015-11-16T08:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/losslesslife/</loc>
+    <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/bugtrackers.io/</loc>
+    <lastmod>2015-10-27T09:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/ninjaducks.in/</loc>
+    <lastmod>2015-10-24T14:06:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/maximeguitare/</loc>
+    <lastmod>2015-10-05T17:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/ridingbytes/</loc>
+    <lastmod>2015-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/yulinling.net/</loc>
+    <lastmod>2015-09-09T21:42:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_benchmark/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_check/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_config/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_convert/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_convert_tojson/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_convert_totoml/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_convert_toyaml/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_genautocomplete/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_gendoc/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_list/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_list_drafts/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_list_future/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_new/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_new_site/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_new_theme/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_server/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_undraft/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_version/</loc>
+    <lastmod>2015-09-08T22:45:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/richardsumilang/</loc>
+    <lastmod>2015-09-07T00:12:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/humboldtux/</loc>
+    <lastmod>2015-09-06T18:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/nodesk/</loc>
+    <lastmod>2015-08-26T22:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/gig/</loc>
+    <lastmod>2015-08-24T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/chinese-grammar/</loc>
+    <lastmod>2015-08-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/commands/hugo_help/</loc>
+    <lastmod>2015-08-04T03:11:10-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/arqueart/</loc>
+    <lastmod>2015-08-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/scottcwilson/</loc>
+    <lastmod>2015-07-21T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/szymonkatra/</loc>
+    <lastmod>2015-07-10T16:15:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/samuelbe/</loc>
+    <lastmod>2015-07-08T14:02:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/esolia-com/</loc>
+    <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/esolia-pro/</loc>
+    <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/mariosanchez/</loc>
+    <lastmod>2015-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/learnoverpass/</loc>
+    <lastmod>2015-06-06T12:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/kangkona/</loc>
+    <lastmod>2015-06-04T12:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/rick-cogley-info/</loc>
+    <lastmod>2015-05-20T04:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/consequently/</loc>
+    <lastmod>2015-02-11T13:21:27+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/arianv/</loc>
+    <lastmod>2015-02-06T12:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/troubleshooting/overview/</loc>
+    <lastmod>2015-01-18T02:41:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/thehome/</loc>
+    <lastmod>2014-12-27T20:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/stou/</loc>
+    <lastmod>2014-11-23T01:28:16+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/launchcode5/</loc>
+    <lastmod>2014-11-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/fxsitecompat/</loc>
+    <lastmod>2014-08-26T19:40:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/ucsb/</loc>
+    <lastmod>2014-08-26T14:12:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/nickoneill/</loc>
+    <lastmod>2014-08-26T12:15:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/vurt.co/</loc>
+    <lastmod>2014-08-26T12:09:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/michaelwhatcott/</loc>
+    <lastmod>2014-08-26T11:47:11-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/devmonk/</loc>
+    <lastmod>2014-08-26T11:31:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/peteraba/</loc>
+    <lastmod>2014-08-26T11:30:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/chingli/</loc>
+    <lastmod>2014-08-26T11:20:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/danmux/</loc>
+    <lastmod>2014-08-26T10:55:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/ninya.io/</loc>
+    <lastmod>2014-08-26T09:47:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/tendermint/</loc>
+    <lastmod>2014-08-26T09:34:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/lk4d4.darth.io/</loc>
+    <lastmod>2014-08-25T18:59:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/hackmeeting/</loc>
+    <lastmod>2014-08-25T18:30:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/npf/</loc>
+    <lastmod>2014-08-21T12:21:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/vamp/</loc>
+    <lastmod>2014-06-26T15:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/techmadeplain/</loc>
+    <lastmod>2014-05-22T19:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/yslow-rules/</loc>
+    <lastmod>2014-04-07T10:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/cloudshark/</loc>
+    <lastmod>2014-03-27T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/heyitsalex/</loc>
+    <lastmod>2014-03-09T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/kieranhealy/</loc>
+    <lastmod>2014-02-27T20:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/antzucaro/</loc>
+    <lastmod>2014-02-03T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/asc/</loc>
+    <lastmod>2014-01-22T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/ifup/</loc>
+    <lastmod>2013-11-02T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/davidepetilli/</loc>
+    <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/gogb/</loc>
+    <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/bepsays/</loc>
+    <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/chimera-art-space/</loc>
+    <lastmod>2013-10-02T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/gophercon/</loc>
+    <lastmod>2013-10-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/hugo/</loc>
+    <lastmod>2013-07-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/showcase/spf13/</loc>
+    <lastmod>2013-07-01T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/migrate-from-jekyll/</loc>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/troubleshooting/strange-eof-error/</loc>
+    <lastmod>2015-01-08T16:11:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/news/cariboo/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/news/princegeorge/pg101/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/create-a-multilingual-site/</loc>
+    <lastmod>2015-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/installing-on-windows/</loc>
+    <lastmod>2015-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/installing-on-mac/</loc>
+    <lastmod>2015-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/automated-deployments/</loc>
+    <lastmod>2015-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/troubleshooting/categories-with-accented-characters/</loc>
+    <lastmod>2015-01-08T16:32:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/themes/overview/</loc>
+    <lastmod>2014-05-12T10:03:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/github-pages-blog/</loc>
+    <lastmod>2014-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tutorials/mathjax/</loc>
+    <lastmod>2014-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/aliases/</loc>
+    <lastmod>2013-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/news/kootenay/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/community/mailing-list/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/news/nechako/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/organization/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/overview/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/meta/release-notes/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/supported-formats/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/usage/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/go-templates/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/ace/</loc>
+    <lastmod>2014-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/amber/</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/builders/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/themes/installing/</loc>
+    <lastmod>2014-05-12T10:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/community/press/</loc>
+    <lastmod>2014-03-24T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/displaying/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/front-matter/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/functions/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/meta/roadmap/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/variables/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/comments/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/themes/usage/</loc>
+    <lastmod>2014-05-12T10:09:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/community/contributing/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/sections/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/content/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/templates/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/crossreferences/</loc>
+    <lastmod>2014-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/themes/customizing/</loc>
+    <lastmod>2014-05-12T10:09:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/list/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/types/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/livereload/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/archetypes/</loc>
+    <lastmod>2014-05-14T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/themes/creation/</loc>
+    <lastmod>2014-05-12T10:09:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/homepage/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/meta/license/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/terms/</loc>
+    <lastmod>2014-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/menus/</loc>
+    <lastmod>2014-05-14T02:36:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/ordering/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/ordering/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/summaries/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/permalinks/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/views/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/content/example/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/taxonomies/methods/</loc>
+    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/scratch/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/pagination/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/partials/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/shortcodes/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/rss/</loc>
+    <lastmod>2015-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/datafiles/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/highlighting/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/datadrivencontent/</loc>
+    <lastmod>2015-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/sitemap/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/404/</loc>
+    <lastmod>2013-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/toc/</loc>
+    <lastmod>2013-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/localfiles/</loc>
+    <lastmod>2015-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/templates/debugging/</loc>
+    <lastmod>2015-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/extras/urls/</loc>
+    <lastmod>2014-01-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://git.w3w.ca/tools/</loc>
+    <lastmod>2015-09-12T10:40:31+02:00</lastmod>
+  </url>
+  
+</urlset>

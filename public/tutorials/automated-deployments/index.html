@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Automated deployments with Wercker</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children active  tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li class="active ">
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Automated deployments with Wercker</h1>
+
+      
+
+        <div id="toc" class="toc full">            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#creating-a-basic-hugo-site:b122a196014951ebab85fff56cc6436b">Creating a basic Hugo site</a></li>
+<li><a href="#setting-up-version-control:b122a196014951ebab85fff56cc6436b">Setting up version control</a></li>
+<li><a href="#adding-the-project-to-github:b122a196014951ebab85fff56cc6436b">Adding the project to GitHub</a></li>
+<li><a href="#welcome-to-wercker:b122a196014951ebab85fff56cc6436b">Welcome to wercker</a></li>
+<li><a href="#register:b122a196014951ebab85fff56cc6436b">Register</a></li>
+<li><a href="#connect-github-bitbucket:b122a196014951ebab85fff56cc6436b">Connect GitHub/Bitbucket</a></li>
+<li><a href="#add-your-project:b122a196014951ebab85fff56cc6436b">Add your project</a></li>
+<li><a href="#select-a-repository:b122a196014951ebab85fff56cc6436b">Select a repository</a></li>
+<li><a href="#select-the-repository-owner:b122a196014951ebab85fff56cc6436b">Select the repository owner</a></li>
+<li><a href="#configure-access:b122a196014951ebab85fff56cc6436b">Configure access</a></li>
+<li><a href="#wercker-yml:b122a196014951ebab85fff56cc6436b">Wercker.yml</a></li>
+<li><a href="#public-or-not:b122a196014951ebab85fff56cc6436b">Public or not</a></li>
+<li><a href="#and-we-ve-got-an-app:b122a196014951ebab85fff56cc6436b">And we&rsquo;ve got an app</a></li>
+<li><a href="#adding-steps:b122a196014951ebab85fff56cc6436b">Adding steps</a></li>
+<li><a href="#using-hugo-build:b122a196014951ebab85fff56cc6436b">Using Hugo-Build</a></li>
+<li><a href="#adding-a-github-pages-step:b122a196014951ebab85fff56cc6436b">Adding a GitHub Pages step</a></li>
+<li><a href="#configure-the-deploy-step:b122a196014951ebab85fff56cc6436b">Configure the deploy step</a></li>
+<li><a href="#conclusion:b122a196014951ebab85fff56cc6436b">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>        
+      
+
+      
+
+<p>In this tutorial we will set up a basic Hugo project and then configure a free tool called Wercker to automatically deploy the generated site any time we add an article. We will deploy it to GitHub pages as that is easiest to set up, but you will see that we can use anything. This tutorial takes you through every step of the process, complete with screenshots and is fairly long.</p>
+
+<p>The  assumptions made for this tutorial are that you know how to use git for version control, and have a GitHub account. In case you are unfamiliar with these, in their <a href="https://help.github.com/articles/set-up-git/">help section</a> GitHub has an explanation of how to install and use git and you can easily sign up for a free GitHub account as well.</p>
+
+<h2 id="creating-a-basic-hugo-site:b122a196014951ebab85fff56cc6436b">Creating a basic Hugo site</h2>
+
+<p>There are already <a href="http://gohugo.io/overview/quickstart/">pages</a> dedicated to describing how to set up a Hugo site so we will only go through the most basic steps required to get a site up and running before we dive into the Wercker configuration. All the work for setting up the project is done using the command line, and kept as simple as possible.</p>
+
+<p>Create the new site using the <code>hugo new site</code> command, and we move into it.</p>
+
+<pre><code class="language-bash">hugo new site hugo-wercker-example
+cd hugo-wercker-example
+</code></pre>
+
+<p>Add the herring-cove theme by cloning it into the theme directory using the following commands.</p>
+
+<pre><code class="language-bash">mkdir themes
+cd themes
+git clone https://github.com/spf13/herring-cove.git
+</code></pre>
+
+<p>Cloning the project like this will conflict with our own version control, so we remove the external git configuration.</p>
+
+<pre><code class="language-bash">rm -rf herring-cove/.git
+</code></pre>
+
+<p>Let&rsquo;s add a quick <strong>about</strong> page.</p>
+
+<pre><code class="language-bash">hugo new about.md
+</code></pre>
+
+<p>Now we&rsquo;ll edit contents/about.md to ensure it&rsquo;s no longer a draft and add some text to it.</p>
+
+<pre><code class="language-bash">hugo undraft content/about.md
+</code></pre>
+
+<p>Once completed it&rsquo;s a good idea to do a quick check if everything is working by running</p>
+
+<pre><code class="language-bash">hugo server --theme=herring-cove
+</code></pre>
+
+<p>If everything is fine, you should be able to see something similar to the image below when you go to localhost:1313 in your browser.</p>
+
+<p><img src="/img/tutorials/creating-a-basic-hugo-site.png" alt="" /></p>
+
+<h2 id="setting-up-version-control:b122a196014951ebab85fff56cc6436b">Setting up version control</h2>
+
+<p>Adding git to our project is done by running the <code>git init</code> command from the root directory of the project.</p>
+
+<pre><code class="language-bash">git init
+</code></pre>
+
+<p>Running <code>git status</code> at this point will show you p entries: the <strong>config.toml</strong> file, the <strong>themes</strong> directory, the <strong>contents</strong> directory, and the <strong>public</strong> directory. We don&rsquo;t want the <strong>public</strong> directory version controlled however, as we will use wercker to generate that later on. Therefore, we&rsquo;ll add a gitignore file that will exclude this using the following command.</p>
+
+<pre><code class="language-bash">echo &quot;/public&quot; &gt;&gt; .gitignore
+</code></pre>
+
+<p>As we currently have no static files outside of the theme directory, Wercker might complain when we try to build the site later on. To prevent this, we simply have to add any file to the static folder. To keep it simple for now we&rsquo;ll add a robots.txt file that will give all search engines full access to the site when it&rsquo;s up.</p>
+
+<pre><code class="language-bash">echo &quot;User-agent: *\nDisallow:&quot; &gt; static/robots.txt
+</code></pre>
+
+<p>After this we can add everything to the repository.</p>
+
+<pre><code class="language-bash">git commit -a -m &quot;Initial commit&quot;
+</code></pre>
+
+<h2 id="adding-the-project-to-github:b122a196014951ebab85fff56cc6436b">Adding the project to GitHub</h2>
+
+<p>First we&rsquo;ll create a new repository. You can do this by clicking on the <strong>+</strong> sign at the top right, or by going to <a href="https://github.com/new">https://github.com/new</a></p>
+
+<p>We then choose a name for the project (<strong>hugo-wercker-example</strong>). When clicking on create repository GitHub displays the commands for adding an existing project to the site. The commands shown below are the ones used for this site, if you&rsquo;re following along you will need to use the ones shown by GitHub. Once we&rsquo;ve run those commands the project is in GitHub and we can move on to setting up the Wercker configuration.</p>
+
+<pre><code class="language-bash">git remote add origin git@github.com:YourUsername/hugo-wercker-example.git
+git push -u origin master
+</code></pre>
+
+<p><img src="/img/tutorials/adding-the-project-to-github.png" alt="" /></p>
+
+<h2 id="welcome-to-wercker:b122a196014951ebab85fff56cc6436b">Welcome to wercker</h2>
+
+<p>Let&rsquo;s start by setting up an account for Wercker. To do so we&rsquo;ll go to <a href="http://wercker.com">http://wercker.com</a> and click on the <strong>Sign up</strong> button.</p>
+
+<p><img src="/img/tutorials/wercker-sign-up.png" alt="" /></p>
+
+<h2 id="register:b122a196014951ebab85fff56cc6436b">Register</h2>
+
+<p>To make life easier for ourselves, we will then register using GitHub. If you don&rsquo;t have a GitHub account, or don&rsquo;t want to use it for your account, you can of course register with a username and password as well.</p>
+
+<p><img src="/img/tutorials/wercker-sign-up-page.png" alt="" /></p>
+
+<h2 id="connect-github-bitbucket:b122a196014951ebab85fff56cc6436b">Connect GitHub/Bitbucket</h2>
+
+<p>After you are registered, you will need to link your GitHub and/or Bitbucket account to Wercker. You do this by going to your profile settings, and then &ldquo;Git connections&rdquo; If you registered using GitHub it will most likely look like the image below. To connect a missing service, simply click on the connect button which will then send you to either GitHub or Bitbucket where you might need to log in and approve their access to your account.</p>
+
+<p><img src="/img/tutorials/wercker-git-connections.png" alt="" /></p>
+
+<h2 id="add-your-project:b122a196014951ebab85fff56cc6436b">Add your project</h2>
+
+<p>Now that we&rsquo;ve got all the preliminaries out of the way, it&rsquo;s time to set up our application. For this we click on the <strong>+ Create</strong> button next to Applications, and then we&rsquo;ll choose to use GitHub as our provider.</p>
+
+<p><img src="/img/tutorials/wercker-add-app.png" alt="" /></p>
+
+<h2 id="select-a-repository:b122a196014951ebab85fff56cc6436b">Select a repository</h2>
+
+<p>Clicking this will make Wercker show you all the repositories you have on GitHub, but you can easily filter them as well. So we search for our repository, select it, and then click on &ldquo;Use selected repo&rdquo;.</p>
+
+<p><img src="/img/tutorials/wercker-select-repository.png" alt="" /></p>
+
+<h2 id="select-the-repository-owner:b122a196014951ebab85fff56cc6436b">Select the repository owner</h2>
+
+<p>In the next step, Wercker asks you to select the repository owner. Just select your own GitHub account and continue.</p>
+
+<p><img src="/img/tutorials/wercker-select-owner.png" alt="" /></p>
+
+<h2 id="configure-access:b122a196014951ebab85fff56cc6436b">Configure access</h2>
+
+<p>This step can be slightly tricky. As Wercker doesn&rsquo;t access to check out your private projects by default it will ask you what you want to do. When your project is public, as needs to be the case if you wish to use GitHub Pages, the top choice is recommended. When you use this it will simply check out the code in the same way anybody visiting the project on GitHub can do.</p>
+
+<p><img src="/img/tutorials/wercker-access.png" alt="" /></p>
+
+<h2 id="wercker-yml:b122a196014951ebab85fff56cc6436b">Wercker.yml</h2>
+
+<p>Wercker will now attempt to create an initial <em>wercker.yml</em> file for you. Or rather, it will create the code you can copy into it yourself. Because there is nothing special about our project according to Wercker, we will simply get the <code>debian</code> box. So what we do now is create a <em>wercker.yml</em> file in the root of our project that contains the provided configuration, and after we finish setting up the app we will expand this file to make it actually do something.</p>
+
+<p><img src="/img/tutorials/werckeryml.png" alt="" /></p>
+
+<h2 id="public-or-not:b122a196014951ebab85fff56cc6436b">Public or not</h2>
+
+<p>This is a personal choice, you can make an app public so that everyone can see more details about it. This doesn&rsquo;t give you any real benefits either way in general, although as part of the tutorial I have of course made this app public so you can see it in action <a href="https://app.wercker.com/#applications/5586dcbdaf7de9c51b02b0d5">yourself</a>.</p>
+
+<p><img src="/img/tutorials/public-or-not.png" alt="" /></p>
+
+<h2 id="and-we-ve-got-an-app:b122a196014951ebab85fff56cc6436b">And we&rsquo;ve got an app</h2>
+
+<p>The application is added now, and Wercker will be offering you the chance to trigger a build. As we haven&rsquo;t pushed up the <strong>wercker.yml</strong> file however, we will politely decline this option.</p>
+
+<p><img src="/img/tutorials/and-we-ve-got-an-app.png" alt="" /></p>
+
+<h2 id="adding-steps:b122a196014951ebab85fff56cc6436b">Adding steps</h2>
+
+<p>And now we&rsquo;re going to add the steps themselves. First, we go to the &ldquo;Registry&rdquo; action in the top menu and then search for &ldquo;hugo build&rdquo;. The first result is the <strong>Hugo-Build</strong> task, which we select.</p>
+
+<p><img src="/img/tutorials/wercker-search.png" alt="" /></p>
+
+<h2 id="using-hugo-build:b122a196014951ebab85fff56cc6436b">Using Hugo-Build</h2>
+
+<p>Inside the details of this step you will see how to use it. At the top is a summary for the very basic usage, but when scrolling down you go through the README of the step which will usually contain more details about the advanced options available and a full example of using the step.</p>
+
+<p>We&rsquo;re not going to use any of the advanced features in this tutorial, so we&rsquo;ll return to our project and add the details we need to our wercker.yml file so that it looks like the below. Wercker also has a <a href="http://devcenter.wercker.com/articles/werckeryml/validate.html">page</a> for validating wercker.yml files, and it&rsquo;s usually a good idea to do so before committing changes as minor typos might cause it to fail.</p>
+
+<pre><code class="language-yaml">box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &quot;0.14&quot;
+        theme: herring-cove
+        flags: --buildDrafts=true
+</code></pre>
+
+<p>This concludes the first step, so we&rsquo;ll test that it all works as it should by pushing up our wercker.yml file and seeing the magic at work.</p>
+
+<pre><code class="language-bash">git commit -a -m &quot;Add wercker.yml&quot;
+git push origin master
+</code></pre>
+
+<p>Once completed a nice tick should have appeared in front of your first build, and if you want you can look at the details by clicking on it. However, we&rsquo;re not done yet as we still need to deploy it to GitHub Pages.</p>
+
+<p><img src="/img/tutorials/using-hugo-build.png" alt="" /></p>
+
+<h2 id="adding-a-github-pages-step:b122a196014951ebab85fff56cc6436b">Adding a GitHub Pages step</h2>
+
+<p>In order to deploy to GitHub Pages we need to add a deploy step. Once again searching through the Steps repository we find that the most popular step is the <strong>lukevevier/gh-pages</strong> step so we add the configuration for that to our wercker.yml file. Additionally we need to ensure that the box we run on has git and ssh installed. We can do this using the <strong>install-packages</strong> command, which then turns the wercker.yml file into this:</p>
+
+<pre><code class="language-yaml">box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &quot;0.14&quot;
+        theme: herring-cove
+        flags: --buildDrafts=true
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        doresources: hugo-wercker.ig.nore.me
+        basedir: public
+</code></pre>
+
+<p>How does the GitHub Pages configuration work? We&rsquo;ve selected a couple of things, first the domain we want to use for the site. Configuring this here will ensure that GitHub Pages is aware of the domain you want to use.</p>
+
+<p>Secondly we&rsquo;ve configured the basedir to <strong>public</strong>, this is the directory that will be used as the website on GitHub Pages.</p>
+
+<p>And lastly, you can see here that this has a <strong>$GIT_TOKEN</strong> variable. This is used for pushing our changes up to GitHub and we will need to configure this before we can do that. We do this by going to our app&rsquo;s settings and clicking on <strong>Deploy targets</strong>. Now, we <strong>Add deploy target</strong> and select <strong>Custom deploy</strong>.</p>
+
+<p><img src="/img/tutorials/adding-a-github-pages-step.png" alt="" /></p>
+
+<h2 id="configure-the-deploy-step:b122a196014951ebab85fff56cc6436b">Configure the deploy step</h2>
+
+<p>Simply fill in the name, and make sure you enable <strong>auto deploy</strong> from the <strong>master</strong> branch. Next you add a variable for the <strong>GIT_TOKEN</strong>, for this you&rsquo;ll need to create an access token in GitHub. How to do that is described on a <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">GitHub help page</a>. With the deploy step configured in Wercker, we can push the updated wercker.yml file to GitHub and it will create the GitHub pages site for us. The example site we used here is accessible under hugo-wercker.ig.nore.me</p>
+
+<p><img src="/img/tutorials/configure-the-deploy-step.png" alt="" /></p>
+
+<h2 id="conclusion:b122a196014951ebab85fff56cc6436b">Conclusion</h2>
+
+<p>From now on, any time you want to put a new post on your blog all you need to do is push your new page to GitHub and the rest will happen automatically. The source code for the example site used here is available on <a href="https://github.com/ArjenSchwarz/hugo-wercker-example">GitHub</a>, as is the <a href="https://github.com/ArjenSchwarz/wercker-step-hugo-build">Hugo Build step</a> itself.</p>
+
+<p>If you want to see an example of how you can deploy to S3 instead of GitHub pages, take a look at <a href="http://devcenter.wercker.com/docs/deploy/s3.html">Wercker&rsquo;s documentation</a> about how to set that up.</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

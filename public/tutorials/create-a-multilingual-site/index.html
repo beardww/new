@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Create a Multilingual Site</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children active  tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li class="active ">
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Create a Multilingual Site</h1>
+
+      
+
+        <div id="toc" class="toc ">            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction:3ab7ea48cc84829bac833a8a28ca00f8">Introduction</a></li>
+<li><a href="#site-configs:3ab7ea48cc84829bac833a8a28ca00f8">Site Configs</a></li>
+<li><a href="#prep-translation-strings-in-data:3ab7ea48cc84829bac833a8a28ca00f8">Prep Translation Strings in <code>/data</code></a></li>
+<li><a href="#reference-strings-in-templates:3ab7ea48cc84829bac833a8a28ca00f8">Reference Strings in templates</a></li>
+<li><a href="#customize-dates:3ab7ea48cc84829bac833a8a28ca00f8">Customize Dates</a></li>
+<li><a href="#create-multilingual-content:3ab7ea48cc84829bac833a8a28ca00f8">Create Multilingual Content</a></li>
+<li><a href="#run-hugo-server-or-deploy-commands:3ab7ea48cc84829bac833a8a28ca00f8">Run Hugo Server or Deploy Commands</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>        
+      
+
+      
+
+<h2 id="introduction:3ab7ea48cc84829bac833a8a28ca00f8">Introduction</h2>
+
+<p>Hugo allows you to create a multilingual site from its built-in tools. This tutorial will show one way to do it, and assumes:</p>
+
+<ul>
+<li>You already know the basics about creating a Hugo site</li>
+<li>You have a separate domain name for each language</li>
+<li>You&rsquo;ll use <code>/data</code> files for some translation strings</li>
+<li>You&rsquo;ll use single, combined <code>layout</code> and <code>static</code> folders</li>
+<li>You&rsquo;ll use a subfolder for each language under <code>content</code> and <code>public</code></li>
+</ul>
+
+<h2 id="site-configs:3ab7ea48cc84829bac833a8a28ca00f8">Site Configs</h2>
+
+<p>Create your site configs in the root of your repository, for example for an English and Japanese site.</p>
+
+<p><strong>English Config <code>config_en.toml</code></strong>:</p>
+
+<pre><code class="language-toml">baseurl = &quot;http://acme.com/&quot;
+title = &quot;Acme Inc.&quot;
+contentdir = &quot;content/en&quot;
+publishdir = &quot;public/en&quot;
+
+[params]
+    locale = &quot;en-US&quot;
+</code></pre>
+
+<p><strong>Japanese Config <code>config_ja.toml</code></strong>:</p>
+
+<pre><code class="language-toml">baseurl = &quot;http://acme.jp/&quot;
+title = &quot;有限会社アクミー&quot;
+contentdir = &quot;content/ja&quot;
+publishdir = &quot;public/ja&quot;
+
+[params]
+    locale = &quot;ja-JP&quot;
+</code></pre>
+
+<p>If you had more domains and languages, you would just create more config files. The standard <code>config.toml</code> is what Hugo will run as a default, but since we&rsquo;re creating language-specific ones, you&rsquo;ll need to specify each config file when running <code>hugo server</code> or just <code>hugo</code> before deploying.</p>
+
+<h2 id="prep-translation-strings-in-data:3ab7ea48cc84829bac833a8a28ca00f8">Prep Translation Strings in <code>/data</code></h2>
+
+<p>Create <code>.yaml</code> (or <code>.json</code> or <code>.toml</code>) files for each language, under <code>/data/translations</code>.</p>
+
+<p><strong>English Strings <code>en-US.yaml</code></strong>:</p>
+
+<pre><code class="language-yaml">topslogan: Acme Inc.
+topsubslogan: You'll love us
+...
+</code></pre>
+
+<p><strong>Japanese Strings <code>ja-JP.yaml</code></strong>:</p>
+
+<pre><code class="language-yaml">topslogan: 有限会社アクミー
+topsubslogan: キット勝つぞ
+...
+</code></pre>
+
+<p>In some cases, where there is more complex formatting within the strings you want to show, it might be better to employ some conditional logic in your template, to display a block of html per language.</p>
+
+<h2 id="reference-strings-in-templates:3ab7ea48cc84829bac833a8a28ca00f8">Reference Strings in templates</h2>
+
+<p>Now you can reference the strings in your templates. One way is to do it like in this <code>layouts/index.html</code>, leveraging the fact that you have the locale set:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;{{ .Site.Params.locale }}&quot;&gt;
+...
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;{{ if eq .Site.Params.locale &quot;en-US&quot; }}{{ if .IsHome }}Welcome to {{ end }}{{ end }}{{ .Title }}{{ if eq .Site.Params.locale &quot;ja-JP&quot; }}{{ if .IsHome }}へようこそ{{ end }}{{ end }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}&lt;/title&gt;
+    ...
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;h1 class=&quot;header&quot;&gt;{{ ( index $.Site.Data.translations $.Site.Params.locale ).topslogan }}&lt;/h1&gt;
+      &lt;h3 class=&quot;subheader&quot;&gt;{{ ( index $.Site.Data.translations $.Site.Params.locale ).topsubslogan }}&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>The above shows both techniques, using an <code>if eq</code> and <code>else if eq</code> to check the locale, and using <code>index</code> to pull strings from the data file that matches the locale set in the site&rsquo;s config file.</p>
+
+<h2 id="customize-dates:3ab7ea48cc84829bac833a8a28ca00f8">Customize Dates</h2>
+
+<p>At the time of this writing, Golang does not yet have support for internationalized locales, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like <code>data/mois.yaml</code> with this content:</p>
+
+<pre><code class="language-toml">1: &quot;janvier&quot;
+2: &quot;février&quot;
+3: &quot;mars&quot;
+4: &quot;avril&quot;
+5: &quot;mai&quot;
+6: &quot;juin&quot;
+7: &quot;juillet&quot;
+8: &quot;août&quot;
+9: &quot;septembre&quot;
+10: &quot;octobre&quot;
+11: &quot;novembre&quot;
+12: &quot;décembre&quot;
+</code></pre>
+
+<p>&hellip; then index the non-English date names in your templates like so:</p>
+
+<pre><code class="language-html">&lt;time class=&quot;post-date&quot; datetime=&quot;{{ .Date.Format &quot;2006-01-02T15:04:05Z07:00&quot; | safeHTML }}&quot;&gt;
+  Article publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf &quot;%d&quot; .Date.Month) }} {{ .Date.Year }} (dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf &quot;%d&quot; .Lastmod.Month) }} {{ .Lastmod.Year }})
+&lt;/time&gt;
+</code></pre>
+
+<p>This technique extracts the day, month and year by specifying <code>.Date.Day</code>, <code>.Date.Month</code>, and <code>.Date.Year</code>, and uses the month number as a key, when indexing the month name data file.</p>
+
+<h2 id="create-multilingual-content:3ab7ea48cc84829bac833a8a28ca00f8">Create Multilingual Content</h2>
+
+<p>Now you can create markdown content in your languages, in the <code>content/en</code> and <code>content/ja</code> folders. The frontmatter stays the same on the key side, but the values would be set in each of the languages.</p>
+
+<h2 id="run-hugo-server-or-deploy-commands:3ab7ea48cc84829bac833a8a28ca00f8">Run Hugo Server or Deploy Commands</h2>
+
+<p>Once you have things set up, you can run <code>hugo server</code> or <code>hugo</code> before deploying. You can create scripts to do it, or as shell functions. Here are sample basic <code>zsh</code> functions:</p>
+
+<p><strong>Live Reload with <code>hugo server</code></strong>:</p>
+
+<pre><code class="language-shell">function hugoserver-com {
+  cd /Users/me/dev/mainsite
+  hugo server --buildDrafts --watch --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_en.toml&quot; --port=1377
+}
+function hugoserver-jp {
+  cd /Users/me/dev/mainsite
+  hugo server --buildDrafts --watch --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_ja.toml&quot; --port=1399
+}
+</code></pre>
+
+<p><strong>Deploy with <code>hugo</code> and <code>rsync</code></strong>:</p>
+
+<pre><code class="language-shell">function hugodeploy-acmecom {
+    rm -rf /tmp/acme.com
+    hugo --config=&quot;/Users/me/dev/mainsite/config_en.toml&quot; -s /Users/me/dev/mainsite/ -d /tmp/acme.com
+    rsync -avze &quot;ssh -p 22&quot; --delete /tmp/acme.com/ me@mywebhost.com:/home/me/webapps/acme_com_site
+}
+
+function hugodeploy-acmejp {
+    rm -rf /tmp/acme.jp
+    hugo --config=&quot;/Users/me/dev/mainsite/config_ja.toml&quot; -s /Users/me/dev/mainsite/ -d /tmp/acme.jp
+    rsync -avze &quot;ssh -p 22&quot; --delete /tmp/acme.jp/ me@mywebhost.com:/home/me/webapps/acme_jp_site
+}
+</code></pre>
+
+<p>Adjust to fit your situation, setting dns, your webserver config, and other settings as appropriate.</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

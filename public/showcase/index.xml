@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showcase on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://git.w3w.ca/showcase/</link>
+    <description>Recent content in Showcase on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Nov 2015 20:46:00 +0000</lastBuildDate>
+    <atom:link href="http://git.w3w.ca/showcase/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Go in 5 minutes</title>
+      <link>http://git.w3w.ca/showcase/goin5minutes/</link>
+      <pubDate>Fri, 20 Nov 2015 20:46:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/goin5minutes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arresteddevops</title>
+      <link>http://git.w3w.ca/showcase/arresteddevops/</link>
+      <pubDate>Fri, 20 Nov 2015 01:46:33 -0600</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/arresteddevops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadText</title>
+      <link>http://git.w3w.ca/showcase/readtext/</link>
+      <pubDate>Mon, 16 Nov 2015 08:36:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/readtext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LosslessLife</title>
+      <link>http://git.w3w.ca/showcase/losslesslife/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/losslesslife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bugtrackers.io</title>
+      <link>http://git.w3w.ca/showcase/bugtrackers.io/</link>
+      <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/bugtrackers.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninjaducks.in</title>
+      <link>http://git.w3w.ca/showcase/ninjaducks.in/</link>
+      <pubDate>Sat, 24 Oct 2015 14:06:00 +0530</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/ninjaducks.in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maximeguitare.com</title>
+      <link>http://git.w3w.ca/showcase/maximeguitare/</link>
+      <pubDate>Mon, 05 Oct 2015 17:15:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/maximeguitare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RIDING BYTES</title>
+      <link>http://git.w3w.ca/showcase/ridingbytes/</link>
+      <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/ridingbytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>语林灵 (Yulinling)</title>
+      <link>http://git.w3w.ca/showcase/yulinling.net/</link>
+      <pubDate>Wed, 09 Sep 2015 21:42:00 -0400</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/yulinling.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Sumilang - Top Secret Labs</title>
+      <link>http://git.w3w.ca/showcase/richardsumilang/</link>
+      <pubDate>Mon, 07 Sep 2015 00:12:00 -0700</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/richardsumilang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humboldtux.net</title>
+      <link>http://git.w3w.ca/showcase/humboldtux/</link>
+      <pubDate>Sun, 06 Sep 2015 18:32:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/humboldtux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodesk.co</title>
+      <link>http://git.w3w.ca/showcase/nodesk/</link>
+      <pubDate>Wed, 26 Aug 2015 22:33:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/nodesk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greenitglobe.com</title>
+      <link>http://git.w3w.ca/showcase/gig/</link>
+      <pubDate>Mon, 24 Aug 2015 07:32:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/gig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chinese Grammar</title>
+      <link>http://git.w3w.ca/showcase/chinese-grammar/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/chinese-grammar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arqueart.com</title>
+      <link>http://git.w3w.ca/showcase/arqueart/</link>
+      <pubDate>Sat, 01 Aug 2015 09:00:00 +0000</pubDate>
+      
+      <guid>http://git.w3w.ca/showcase/arqueart/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

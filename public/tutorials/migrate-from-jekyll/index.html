@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - </title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1></h1>
+
+      
+
+      
+
+<p>tf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural</p>
+
+<p>\f0\fs24 \cf0 &mdash;\
+date: 2014-03-10\
+linktitle: Migrating from Jekyll\
+toc: true\
+menu:\
+  resources:\
+    parent: tutorials\
+prev: /tutorials/mathjax\
+next: /tutorials/create-a-multilingual-site\
+title: Migrate to Hugo from Jekyll\
+weight: 10\
+&mdash;\
+</p>
+
+<h2 id="move-static-contentzz-to-static:964c172ef5e837f03573891408d8d631">Move static contentzz to <code>static</code></h2>
+
+<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.\
+With Jekyll, something that looked like\
+\
+    \uc0\u9662  <root>/\
+        \uc0\u9662  images/\
+            logo.png\
+\
+should become\
+\
+    \uc0\u9662  <root>/\
+        \uc0\u9662  static/\
+            \uc0\u9662  images/\
+                logo.png\
+\
+Additionally, you\&lsquo;92ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.\
+</p>
+
+<h2 id="create-your-hugo-configuration-file:964c172ef5e837f03573891408d8d631">Create your Hugo configuration file</h2>
+
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.\
+</p>
+
+<h2 id="set-your-configuration-publish-folder-to-site:964c172ef5e837f03573891408d8d631">Set your configuration publish folder to <code>_site</code></h2>
+
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you\&lsquo;92ll want to do one of two alternatives:\
+\
+1. Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).\
+\
+        git submodule deinit _site\
+        git rm _site\
+        git submodule add -b gh-pages git@github.com:your-username/your-repo.git public\
+\
+2. Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.\
+\
+        {\
+            ..\
+            &ldquo;publishdir&rdquo;: &ldquo;_site&rdquo;,\
+            ..\
+        }\
+</p>
+
+<h2 id="convert-jekyll-templates-to-hugo-templates:964c172ef5e837f03573891408d8d631">Convert Jekyll templates to Hugo templates</h2>
+
+<p>That\&lsquo;92s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll\&lsquo;92s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo\&lsquo;92s template</a> to learn Hugo\&lsquo;92s way.\
+\
+As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.\
+</p>
+
+<h2 id="convert-jekyll-plugins-to-hugo-shortcodes:964c172ef5e837f03573891408d8d631">Convert Jekyll plugins to Hugo shortcodes</h2>
+
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It\&lsquo;92s fairly trivial to do a port.\
+</p>
+
+<h3 id="implementation:964c172ef5e837f03573891408d8d631">Implementation</h3>
+
+<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.\
+\
+Jekyll\&lsquo;92s plugin:\
+\
+    module Jekyll\
+      class ImageTag &lt; Liquid::Tag\
+        @url = nil\
+        @caption = nil\
+        @class = nil\
+        @link = nil\
+        // Patterns\
+        IMAGE_URL_WITH_CLASS_AND_CAPTION =\
+        IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&ldquo;(.<em>?)&ldquo;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s</em>)/i\
+        IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&ldquo;(.*?)&ldquo;/i\
+        IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i\
+        IMAGE_URL = /((https?:\/\/|\/)(\S+))/i\
+        def initialize(tag_name, markup, tokens)\
+          super\
+          if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK\
+            @class   = $1\
+            @url     = $3\
+            @caption = $7\
+            @link = $9\
+          elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION\
+            @class   = $1\
+            @url     = $3\
+            @caption = $7\
+          elsif markup =~ IMAGE_URL_WITH_CAPTION\
+            @url     = $1\
+            @caption = $5\
+          elsif markup =~ IMAGE_URL_WITH_CLASS\
+            @class = $1\
+            @url   = $3\
+          elsif markup =~ IMAGE_URL\
+            @url = $1\
+          end\
+        end\
+        def render(context)\
+          if @class\
+            source = &ldquo;<figure class=\'92#\{@class\}\'92>&ldquo;\
+          else\
+            source = &ldquo;<figure>&ldquo;\
+          end\
+          if @link\
+            source += &ldquo;<a href=\\"#\{@link\}\\">&ldquo;\
+          end\
+          source += &ldquo;<img src=\\"#\{@url\}\\">&ldquo;\
+          if @link\
+            source += &ldquo;</a>&ldquo;\
+          end\
+          source += &ldquo;<figcaption>#{@caption}</figcaption>&rdquo; if @caption\
+          source += &ldquo;</figure>&ldquo;\
+          source\
+        end\
+      end\
+    end\
+    Liquid::Template.register_tag(\&lsquo;92image\&lsquo;92, Jekyll::ImageTag)\
+\
+is written as this Hugo shortcode:\
+\
+    <!-- image -->\
+    <figure \{\{ with .Get "class" \}\}class="\{\{.\}\}"\{\{ end \}\}>\
+        {{ with .Get &ldquo;link&rdquo;}}<a href="\{\{.\}\}">{{ end }}\
+            <img src="\{\{ .Get "src" \}\}" \{\{ if or (.Get "alt") (.Get "caption") \}\}alt="\{\{ with .Get "alt"\}\}\{\{.\}\}\{\{else\}\}\{\{ .Get "caption" \}\}\{\{ end \}\}"\{\{ end \}\} />\
+        {{ if .Get &ldquo;link&rdquo;}}</a>{{ end }}\
+        {{ if or (or (.Get &ldquo;title&rdquo;) (.Get &ldquo;caption&rdquo;)) (.Get &ldquo;attr&rdquo;)}}\
+        <figcaption>{{ if isset .Params &ldquo;title&rdquo; }}\
+            {{ .Get &ldquo;title&rdquo; }}{{ end }}\
+            {{ if or (.Get &ldquo;caption&rdquo;) (.Get &ldquo;attr&rdquo;)}}<p>\
+            {{ .Get &ldquo;caption&rdquo; }}\
+            {{ with .Get &ldquo;attrlink&rdquo;}}<a href="\{\{.\}\}"> {{ end }}\
+                {{ .Get &ldquo;attr&rdquo; }}\
+            {{ if .Get &ldquo;attrlink&rdquo;}}</a> {{ end }}\
+            </p> {{ end }}\
+        </figcaption>\
+        {{ end }}\
+    </figure>\
+    <!-- image -->\
+</p>
+
+<h3 id="usage:964c172ef5e837f03573891408d8d631">Usage</h3>
+
+<p>I simply changed:\
+\
+    {% image full <a href="http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg">http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg</a> &ldquo;One of my favorite touristy-type photos. I secretly waited for the good light while we were &ldquo;having fun&rdquo; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&rdquo; -&gt;<a href="http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/">http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/</a> %}\
+\
+to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):\
+\
+    {{%/* fig class=&ldquo;full&rdquo; src=&ldquo;<a href="http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot;">http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot;</a> title=&ldquo;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&rdquo; link=&ldquo;<a href="http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot;">http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot;</a> */%}}\
+\
+As a bonus, the shortcode named parameters are, arguably, more readable.\
+</p>
+
+<h2 id="finishing-touches:964c172ef5e837f03573891408d8d631">Finishing touches</h2>
+
+<h3 id="fix-content:964c172ef5e837f03573891408d8d631">Fix content</h3>
+
+<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.\
+</p>
+
+<h3 id="clean-up:964c172ef5e837f03573891408d8d631">Clean up</h3>
+
+<p>You\&lsquo;92ll want to remove the Jekyll configuration at this point. If you have anything else that isn\&lsquo;92t used, delete it.\
+</p>
+
+<h2 id="a-practical-example-in-a-diff:964c172ef5e837f03573891408d8d631">A practical example in a diff</h2>
+
+<p><a href="http://heyitsalex.net/">Hey, it\&lsquo;92s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.}</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Syntax Highlighting</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children active  extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li class="active ">
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Syntax Highlighting</h1>
+
+      
+
+        <div id="toc" class="toc full">            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#server-side:c4210b265c792cac9a6cf6a5f53b671d">Server-side</a>
+<ul>
+<li><a href="#pygments:c4210b265c792cac9a6cf6a5f53b671d">Pygments</a></li>
+<li><a href="#usage:c4210b265c792cac9a6cf6a5f53b671d">Usage</a></li>
+<li><a href="#example:c4210b265c792cac9a6cf6a5f53b671d">Example</a></li>
+<li><a href="#example-output:c4210b265c792cac9a6cf6a5f53b671d">Example Output</a></li>
+<li><a href="#options:c4210b265c792cac9a6cf6a5f53b671d">Options</a></li>
+<li><a href="#disclaimers:c4210b265c792cac9a6cf6a5f53b671d">Disclaimers</a></li>
+</ul></li>
+<li><a href="#client-side:c4210b265c792cac9a6cf6a5f53b671d">Client-side</a>
+<ul>
+<li><a href="#highlight-js-example:c4210b265c792cac9a6cf6a5f53b671d">Highlight.js example</a></li>
+<li><a href="#prism-example:c4210b265c792cac9a6cf6a5f53b671d">Prism example</a></li>
+<li><a href="#using-client-side-highlighting:c4210b265c792cac9a6cf6a5f53b671d">Using Client-side highlighting</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>        
+      
+
+      
+
+<p>Hugo provides the ability for you to highlight source code in <em>two different ways</em> &mdash; either pre-processed server side from your content, or to defer the processing to the client side, using a JavaScript library.</p>
+
+<p><strong>The advantage of server side</strong> is that it doesn’t depend on a JavaScript library and consequently works very well when read from an RSS feed.</p>
+
+<p><strong>The advantage of client side</strong> is that it doesn’t cost anything when building your site and some of the highlighting scripts available cover more languages than Pygments does.</p>
+
+<h2 id="server-side:c4210b265c792cac9a6cf6a5f53b671d">Server-side</h2>
+
+<p>For the pre-processed approach, highlighting is performed by an external Python-based program called <a href="http://pygments.org/">Pygments</a> and is triggered via an embedded Hugo shortcode (see example below). If Pygments is absent from the path, it will silently simply pass the content along unhighlighted.</p>
+
+<h3 id="pygments:c4210b265c792cac9a6cf6a5f53b671d">Pygments</h3>
+
+<p>If you have never worked with Pygments before, here is a brief primer:</p>
+
+<ul>
+<li>Install Python from <a href="https://www.python.org/downloads/">python.org</a>. Version 2.7.x is already sufficient.</li>
+<li>Run <code>pip install Pygments</code> in order to install Pygments. Once installed, Pygments gives you a command <code>pygmentize</code>. Make sure it sits in your PATH, otherwise Hugo cannot find it.</li>
+</ul>
+
+<p>On Debian and Ubuntu systems, you may also install Pygments by running <code>sudo apt-get install python3-pygments</code>.</p>
+
+<p>Hugo gives you two options that you can set with the variable <code>pygmentsuseclasses</code> (default <code>false</code>) in <code>config.toml</code> (or <code>config.yaml</code>).</p>
+
+<ol>
+<li>Color-codes for highlighting keywords are directly inserted if <code>pygmentsuseclasses = false</code> (default). See in the example below. The color-codes depend on your choice of the <code>pygmentsstyle</code> (default <code>&quot;monokai&quot;</code>). You can explore the different color styles on <a href="http://pygments.org/">pygments.org</a> after inserting some example code.</li>
+<li>If you choose <code>pygmentsuseclasses = true</code>, Hugo includes class names in your code instead of color-codes. For class-names to be meaningful, you need to include a <code>.css</code>-file in your website representing your color-scheme. You can either generate this <code>.css</code>-files according to this <a href="http://pygments.org/docs/cmdline/">description</a> or download the standard ones from the <a href="https://github.com/richleland/pygments-css">GitHub pygments-css repository</a>.</li>
+</ol>
+
+<h3 id="usage:c4210b265c792cac9a6cf6a5f53b671d">Usage</h3>
+
+<p>Highlighting is carried out via the in-built shortcode <code>highlight</code>. <code>highlight</code> takes exactly one required parameter of language, and requires a closing shortcode. Note that <code>highlight</code> is <em>not</em> used for client-side javascript highlighting.</p>
+
+<h3 id="example:c4210b265c792cac9a6cf6a5f53b671d">Example</h3>
+
+<pre><code>{{&lt; highlight html &gt;}}
+&lt;section id=&quot;main&quot;&gt;
+  &lt;div&gt;
+    &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt;
+    {{ range .Data.Pages }}
+      {{ .Render &quot;summary&quot;}}
+    {{ end }}
+  &lt;/div&gt;
+&lt;/section&gt;
+{{&lt; /highlight &gt;}}
+</code></pre>
+
+<h3 id="example-output:c4210b265c792cac9a6cf6a5f53b671d">Example Output</h3>
+
+<pre><code>&lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;section&lt;/span&gt; &lt;span style=&quot;color: #a6e22e&quot;&gt;id=&lt;/span&gt;&lt;span style=&quot;color: #e6db74&quot;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #f92672&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span style=&quot;color: #a6e22e&quot;&gt;id=&lt;/span&gt;&lt;span style=&quot;color: #e6db74&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #f92672&quot;&gt;&amp;gt;&lt;/span&gt;{{ .Title }}&lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    {{ range .Data.Pages }}
+      {{ .Render &amp;quot;summary&amp;quot;}}
+    {{ end }}
+  &lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
+</code></pre>
+
+<h3 id="options:c4210b265c792cac9a6cf6a5f53b671d">Options</h3>
+
+<p>Options to control highlighting can be added as a quoted, comma separated key-value list as the second argument in the shortcode. The example below will highlight as language <code>go</code> with inline line numbers, with line number 2 and 3 highlighted.</p>
+
+<pre><code>{{&lt; highlight go &quot;linenos=inline,hl_lines=2 3&quot; &gt;}}
+var a string
+var b string
+var c string
+var d string
+{{&lt; / highlight &gt;}}
+</code></pre>
+
+<p>Supported keywords:  <code>style</code>, <code>encoding</code>, <code>noclasses</code>, <code>hl_lines</code>, <code>linenos</code>. Note that <code>style</code> and <code>noclasses</code> will override the similar setting in the global config.</p>
+
+<p>The keywords are the same you would using with Pygments from the command line, see the <a href="http://pygments.org/docs/">Pygments doc</a> for more info.</p>
+
+<h3 id="disclaimers:c4210b265c792cac9a6cf6a5f53b671d">Disclaimers</h3>
+
+<ul>
+<li>Pygments is relatively slow and <em>causes a performance hit when building your site</em>, but Hugo has been designed to cache the results to disk.</li>
+<li>Languages available depends on your Pygments installation.</li>
+</ul>
+
+<h2 id="client-side:c4210b265c792cac9a6cf6a5f53b671d">Client-side</h2>
+
+<p>Alternatively, code highlighting can be done in client-side JavaScript.</p>
+
+<p>Client-side syntax highlighting is very simple to add. You&rsquo;ll need to pick
+a library and a corresponding theme. Some popular libraries are:</p>
+
+<ul>
+<li><a href="http://highlightjs.org/">Highlight.js</a></li>
+<li><a href="http://prismjs.com">Prism</a></li>
+<li><a href="http://craig.is/making/rainbows">Rainbow</a></li>
+<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a></li>
+<li><a href="https://github.com/google/code-prettify">Google Prettify</a></li>
+</ul>
+
+<h3 id="highlight-js-example:c4210b265c792cac9a6cf6a5f53b671d">Highlight.js example</h3>
+
+<p>This example uses the popular <a href="http://highlightjs.org/">Highlight.js</a> library, hosted by <a href="http://yandex.ru/">Yandex</a>, a popular Russian search engine.</p>
+
+<p>In your <code>./layouts/partials/</code> (or <code>./layouts/chrome/</code>) folder, depending on your specific theme, there will be a snippet that will be included in every generated HTML page, such as <code>header.html</code> or <code>header.includes.html</code>. Simply add the css and js to initialize <a href="http://highlightjs.org/">Highlight.js</a>:</p>
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://yandex.st/highlightjs/8.0/styles/default.min.css&quot;&gt;
+&lt;script src=&quot;https://yandex.st/highlightjs/8.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<h3 id="prism-example:c4210b265c792cac9a6cf6a5f53b671d">Prism example</h3>
+
+<p>Prism is another popular highlighter library, used on some major sites. Similar to Highlight.js, you simply load <code>prism.css</code> in your <code>&lt;head&gt;</code> via whatever Hugo partial template is creating that part of your pages, like so:</p>
+
+<pre><code class="language-html">...
+&lt;link href=&quot;/css/prism.css&quot; rel=&quot;stylesheet&quot; /&gt;
+...
+</code></pre>
+
+<p>&hellip; and add <code>prism.js</code> near the bottom of your <code>&lt;body&gt;</code> tag, again in whatever Hugo partial template is appropriate for your site or theme.</p>
+
+<pre><code class="language-html">...
+&lt;script src=&quot;/js/prism.js&quot;&gt;&lt;/script&gt;
+...
+&lt;/body&gt;
+</code></pre>
+
+<p>In this example, the local paths indicate that your own copy of these files are being added to the site, typically under <code>./static/</code>.</p>
+
+<h3 id="using-client-side-highlighting:c4210b265c792cac9a6cf6a5f53b671d">Using Client-side highlighting</h3>
+
+<p>To use client-side highlighting, most of these javascript libraries expect your code to be wrapped in semantically correct <code>&lt;code&gt;</code> tags, with the language expressed in a class attribute on the <code>&lt;code&gt;</code> tag, such as <code>class=&quot;language-abc&quot;</code>, where the <code>abc</code> is the code the highlighter script uses to represent that language.</p>
+
+<p>The script would be looking for classes like <code>language-go</code>, <code>language-html</code>, or <code>language-css</code>. If you look at the page&rsquo;s source, it would be marked up like so:</p>
+
+<pre><code class="language-html">&lt;pre&gt;
+&lt;code class=&quot;language-css&quot;&gt;
+body {
+  font-family: &quot;Noto Sans&quot;, sans-serif;
+}
+&lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+
+<p>The markup in your content pages (e.g. <code>my-css-tutorial.md</code>) needs to look like the following, with the name of the language to be highlighted entered directly after the first &ldquo;fence&rdquo;, in a fenced code block:</p>
+
+<pre><code class="language-css">&#126;&#126;&#126;css
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+&#126;&#126;&#126;</code></pre>
+
+<p>When passed through the highlighter script, it would yield something like this output when viewed on your rendered page:</p>
+
+<pre><code class="language-css">body {
+  font-family: &quot;Noto Sans&quot;, sans-serif;
+}
+</code></pre>
+
+<p>Please see individual libraries&rsquo; documentation for how to implement each of the JavaScript-based libraries.</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

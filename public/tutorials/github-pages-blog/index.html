@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Hosting on GitHub Pages</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children active  tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li class="active ">
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Hosting on GitHub Pages</h1>
+
+      
+
+        <div id="toc" class="toc full">            
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction:fcefb200141ace3e7bfd6542457b7a72">Introduction</a>
+<ul>
+<li><a href="#find-a-home-for-your-files:fcefb200141ace3e7bfd6542457b7a72">Find a Home for Your Files</a></li>
+</ul></li>
+<li><a href="#create-the-blog:fcefb200141ace3e7bfd6542457b7a72">Create the Blog</a>
+<ul>
+<li><a href="#write-a-config-yaml-file:fcefb200141ace3e7bfd6542457b7a72">Write a <code>config.yaml</code> File</a></li>
+<li><a href="#define-structure-of-website:fcefb200141ace3e7bfd6542457b7a72">Define Structure of Website</a></li>
+<li><a href="#create-html-templates:fcefb200141ace3e7bfd6542457b7a72">Create HTML Templates</a></li>
+<li><a href="#add-some-content:fcefb200141ace3e7bfd6542457b7a72">Add Some Content</a></li>
+</ul></li>
+<li><a href="#configure-git-workflow:fcefb200141ace3e7bfd6542457b7a72">Configure <code>git</code> Workflow</a>
+<ul>
+<li><a href="#deploy-sh:fcefb200141ace3e7bfd6542457b7a72"><code>deploy.sh</code></a></li>
+</ul></li>
+<li><a href="#configure-git-workflow-the-alternate-way:fcefb200141ace3e7bfd6542457b7a72">Configure <code>git</code> Workflow, the Alternate Way</a></li>
+<li><a href="#hosting-personal-organization-pages:fcefb200141ace3e7bfd6542457b7a72">Hosting Personal/Organization Pages</a></li>
+<li><a href="#conclusion:fcefb200141ace3e7bfd6542457b7a72">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>        
+      
+
+      
+
+<blockquote>
+<p><em>This tutorial was contributed by <a href="http://sglyon.com/">Spencer Lyon</a>.</em></p>
+</blockquote>
+
+<h2 id="introduction:fcefb200141ace3e7bfd6542457b7a72">Introduction</h2>
+
+<p>Many Hugo users have expressed interest in seeing a tutorial for how to set up a blog that is generated by Hugo and hosted on GitHub Pages. This tutorial will do just that. We only require that the reader has Hugo installed correctly and is comfortable with git and GitHub.</p>
+
+<p>During this tutorial, I will walk you through the main steps I took to create an example blog available at <a href="http://spencerlyon2.github.io/hugo_gh_blog">http://spencerlyon2.github.io/hugo_gh_blog</a>. The source code for this blog is on <a href="https://github.com/spencerlyon2/hugo_gh_blog">GitHub</a>. Readers are encouraged to download the example repository and follow along.</p>
+
+<h3 id="find-a-home-for-your-files:fcefb200141ace3e7bfd6542457b7a72">Find a Home for Your Files</h3>
+
+<p>As our goal is to host a website using GitHub Pages, it is natural for us to host the content of the page in a GitHub repository. Thus, the first step is to either create a new repository on GitHub or create a new directory within an existing repository where the content of the website will live. To do this, I created the repository <a href="https://github.com/spencerlyon2/hugo_gh_blog">spencerlyon2/hugo_gh_blog</a>.</p>
+
+<h2 id="create-the-blog:fcefb200141ace3e7bfd6542457b7a72">Create the Blog</h2>
+
+<h3 id="write-a-config-yaml-file:fcefb200141ace3e7bfd6542457b7a72">Write a <code>config.yaml</code> File</h3>
+
+<p>The very first step in creating a new Hugo site is to <a href="/overview/configuration/">write the config file</a>. This config file is important for at least two reasons: (1) this is where site-wide settings (like the websites <code>baseurl</code>) go, and (2) the config file dictates to some extent how Hugo will generate the website. For the example website I created a file <code>config.yaml</code> with the following contents</p>
+
+<pre><code>---
+contentdir: &quot;content&quot;
+layoutdir: &quot;layouts&quot;
+publishdir: &quot;public&quot;
+indexes:
+  category: &quot;categories&quot;
+baseurl: &quot;http://spencerlyon2.github.io/hugo_gh_blog&quot;
+title: &quot;Hugo Blog Template for GitHub Pages&quot;
+canonifyurls: true
+...
+</code></pre>
+
+<blockquote>
+<p><strong>Caveat:</strong> Hugo&rsquo;s former default of <code>canonifyurls: true</code> has been changed
+to <code>false</code> since this tutorial has written.  <strong>Please make sure you manually
+add <code>canonifyurls: true</code> to your <code>config.yaml</code></strong> if you are using Spencer&rsquo;s
+<a href="https://github.com/spencerlyon2/hugo_gh_blog">https://github.com/spencerlyon2/hugo_gh_blog</a> for this tutorial, or you <em>will</em>
+run into problems such as the CSS files not loading.</p>
+
+<p>See <a href="/extras/urls/">&ldquo;Canonicalization: Caveat&rdquo; on the &ldquo;Extras: URLs page&rdquo;</a>
+for more information.</p>
+</blockquote>
+
+<h3 id="define-structure-of-website:fcefb200141ace3e7bfd6542457b7a72">Define Structure of Website</h3>
+
+<p>Hugo assumes that you organize the content of your site in a meaningful way and uses the same structure to render the website. Notice that we have the line <code>contentdir: &quot;content&quot;</code> in our configuration file. This means that all the actual content of the website should be placed somewhere within a folder named <code>content</code>. Hugo treats all directories in <code>content</code> as sections. For our example we only need one section: a place to hold our blog posts. So we created two new folders:</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ content/
+        ▾ posts/
+</code></pre>
+
+<h3 id="create-html-templates:fcefb200141ace3e7bfd6542457b7a72">Create HTML Templates</h3>
+
+<p>The next step is to define the look and feel of your new website. Because Hugo will generate the site using HTML templates written by the user (you), this step is very subjective. I will merely present one possible theme that could be used to generate a blog. I decided to base the example project on a Jekyll theme called <a href="http://lanyon.getpoole.com/">Lanyon</a>. The Lanyon theme is pure CSS and a slightly modified version of the CSS is in the <code>/static/css</code> directory of the example repository. If you are following along, you should grab the <code>static</code> folder from the example repository and put it alongside the <code>content</code> folder you just created.</p>
+
+<p>Because there are so many files needed to fully compose a complete website, I will not be able to go through each of them here. I will, however, show what the directory structure should look like when all is said and done:</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ content/
+        ▾ posts/
+            &lt;blog posts&gt;.md
+    ▾ static/
+        ▾ css/
+            lanyon.css
+            poole.css
+    ▾ layouts/
+        ▾ partials/
+            &lt;templates to be used in other files&gt;.html
+        ▾ posts/
+            li.html
+            single.html
+            summary.html
+        ▾ indexes/
+            category.html
+            indexes.html
+            posts.html
+        index.html
+    README.md
+</code></pre>
+
+<p>Each of the files in the example repository is well commented with a description of what the file as a whole does as well as an explanation of all major components in the file. If you are new to web development and/or Hugo, I encourage you to search through these files to get a feel for how Hugo templates work and how the site is stitched together.</p>
+
+<h3 id="add-some-content:fcefb200141ace3e7bfd6542457b7a72">Add Some Content</h3>
+
+<p>The final step in creating the blog is to add some actual blog posts. To do this, simply create one Markdown file (with extension <code>.md</code>) for each new blog post. At the top of each file you should include a metadata section that tells Hugo some things about the post (see <a href="/content/front-matter/">docs</a>). For example, consider the yaml metadata section from the top of the file <code>/content/posts/newest.md</code> from the example repository:</p>
+
+<pre><code>---
+title: &quot;Just another sample post&quot;
+date: &quot;2014-03-29&quot;
+description: &quot;This should be a more useful description&quot;
+categories:
+    - &quot;hugo&quot;
+    - &quot;fun&quot;
+    - &quot;test&quot;
+---
+</code></pre>
+
+<p>The keys set in this section are the mandatory <code>title</code> and <code>date</code> as well as the optional <code>description</code> and <code>categories</code>. Each of these items is used throughout the templates found in the <code>/layouts</code> directory and gives Hugo information about the post from other pages in the website.</p>
+
+<h2 id="configure-git-workflow:fcefb200141ace3e7bfd6542457b7a72">Configure <code>git</code> Workflow</h2>
+
+<p>Once the site is set up and working properly, we need to push it to the correct branch of a GitHub repository so the website can be served through GitHub Pages. There are many ways to do this. Here I will show the workflow I currently use to manage my websites that are hosted through GitHub Pages.</p>
+
+<p>GitHub Pages will serve up a website for any repository that has a branch called <code>gh-pages</code> with a valid <code>index.html</code> file at that branch&rsquo;s root. A typical workflow might be to keep the content of a website on the <code>master</code> branch of a repository and the generated website on the <code>gh-pages</code> branch. This provides nice separation between input and output, but can be very tedious to work with. As a workaround, we will use the <code>git subtree</code> family of commands to have the <code>public</code> directory (or whatever <code>publishdir</code> is set to in your <code>config.yaml</code>) mirror the root of the <code>gh-pages</code> branch of the repository. This will allow us to do all our work on the <code>master</code> branch, run Hugo to have the site output into the <code>public</code> directory, and then push that directory directly to the correct place for GitHub Pages to serve our site.</p>
+
+<p>To get this properly set up, we will execute a series of commands at the terminal. I will include all of them in one place here for easy copy and paste, and will explain what each line does via comments. Note that this is to be run from the <code>&lt;root&gt;</code> directory (wherever the <code>content</code> and <code>layout</code> folders of your Hugo project live). Also note that you will need to change the commands that have the example repository GitHub address so that they point to your repo.</p>
+
+<pre><code># Create a new orphand branch (no commit history) named gh-pages
+git checkout --orphan gh-pages
+
+# Unstage all files
+git rm --cached $(git ls-files)
+
+# Grab one file from the master branch so we can make a commit
+git checkout master README.md
+
+# Add and commit that file
+git add .
+git commit -m &quot;INIT: initial commit on gh-pages branch&quot;
+
+# Push to remote gh-pages branch
+git push origin gh-pages
+
+# Return to master branch
+git checkout master
+
+# Remove the public folder to make room for the gh-pages subtree
+rm -rf public
+
+# Add the gh-pages branch of the repository. It will look like a folder named public
+git subtree add --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh-pages --squash
+
+# Pull down the file we just committed. This helps avoid merge conflicts
+git subtree pull --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh-pages
+
+# Run hugo. Generated site will be placed in public directory (or omit -t ThemeName if you're not using a theme)
+hugo -t ThemeName
+
+
+# Add everything
+git add -A
+
+# Commit and push to master
+git commit -m &quot;Updating site&quot; &amp;&amp; git push origin master
+
+# Push the public subtree to the gh-pages branch
+git subtree push --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh-pages
+</code></pre>
+
+<p>After executing these commands and waiting for the GitHub servers to update, the website we just created was live at <a href="http://spencerlyon2.github.io/hugo_gh_blog">http://spencerlyon2.github.io/hugo_gh_blog</a>.</p>
+
+<h3 id="deploy-sh:fcefb200141ace3e7bfd6542457b7a72"><code>deploy.sh</code></h3>
+
+<p>Now, as you add new posts to your blog, you will follow steps that look something like the following:</p>
+
+<ul>
+<li>Create the Markdown source for the new post within the <code>content/posts</code> directory</li>
+<li>Preview your work by running Hugo in server mode with <code>hugo server --watch</code></li>
+<li>Run Hugo not in server mode so that the generated urls will be correct for the website</li>
+<li>Add and commit the new post in <code>master</code> branch</li>
+<li>Push the <code>master</code> branch</li>
+<li>Push the public subtree to the remote <code>gh-pages</code> branch</li>
+</ul>
+
+<p>The first two items in the previous list are simply a way to conveniently preview your content as you write. This is a dynamic and fairly streamlined process. All the remaining items, however, are the same every time you want to add new content to the website. To make this repetitive process easier, I have adapted a script from the source repository for the <a href="https://github.com/chimera/chimeraarts.org">Chimer Arts &amp; Maker Space</a> website that is highlighted in the <a href="/showcase/">Hugo Showcase</a>. The script lives in a file called <code>deploy.sh</code> and has the following contents:</p>
+
+<p><strong>Note:</strong></p>
+
+<p>The first command <code>hugo</code> assumes you are running with all the default settings.</p>
+
+<p>To use a theme, make sure to specify it with <code>-t ThemeName</code> instead (or include the theme in the config file).</p>
+
+<pre><code>hugo -t ThemeName
+</code></pre>
+
+<p>To build all draft posts <em>(If you only have drafts, no site will be generated)</em></p>
+
+<pre><code>hugo --buildDrafts
+</code></pre>
+
+<p><strong>Deploy.sh:</strong></p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+git subtree push --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh-pages
+</code></pre>
+
+<p>Now I can replace the last four items from our workflow list with a single command <code>bash deploy.sh</code>. This script accepts as an optional argument the commit message that git should use when committing your changes. If you wish to include a custom commit message, do so by putting it quotes after calling bash on the script: <code>bash deploy.sh &quot;&lt;my commit msg&gt;&quot;</code>. If you choose not to specify the commit message, one will be generated for you using the current time.</p>
+
+<h2 id="configure-git-workflow-the-alternate-way:fcefb200141ace3e7bfd6542457b7a72">Configure <code>git</code> Workflow, the Alternate Way</h2>
+
+<p>The above uses a <code>git subtree</code> to deploy to Gits <code>gh-pages</code> branch. This works great, but with one drawback: It requires the generated content to be committed to the source branch.</p>
+
+<p>There&rsquo;s another approach:</p>
+
+<ol>
+<li>Set up your Hugo-site on <code>master</code></li>
+<li>Create an orphaned <code>gh-pages</code> branch. (See <a href="https://help.github.com/articles/creating-project-pages-manually/">here</a> for more information.)</li>
+<li>Follow the instructions below.</li>
+</ol>
+
+<p>So, assuming you have your <code>gh-pages</code> set up, and <code>master</code> has a commit with some content you want to publish:</p>
+
+<pre><code># Fetch the deployment script into the root of your source tree, make it executable.
+wget https://github.com/X1011/git-directory-deploy/raw/master/deploy.sh &amp;&amp; chmod +x deploy.sh
+
+# For setting it up to build to a folder other than &quot;dist&quot;, see the options in deploy.sh.
+# Build the site to /dist.
+hugo -d dist
+
+# Run the deploy.sh script installed above.
+./deploy.sh
+</code></pre>
+
+<p>This will use the last commit as a base for the commit message to the <code>gh-pages</code> branch.</p>
+
+<p>For more information about the deployment script, see this <a href="https://github.com/X1011/git-directory-deploy">README</a>.</p>
+
+<h2 id="hosting-personal-organization-pages:fcefb200141ace3e7bfd6542457b7a72">Hosting Personal/Organization Pages</h2>
+
+<p>As mentioned <a href="https://help.github.com/articles/user-organization-and-project-pages/">in this GitHub&rsquo;s article</a>, besides project pages, you may also want to host a user/organization page. Here are the key differences:</p>
+
+<blockquote>
+<ul>
+<li>You must use the <code>username.github.io</code> naming scheme.</li>
+<li>Content from the <code>master</code> branch will be used to build and publish your GitHub Pages site.</li>
+</ul>
+</blockquote>
+
+<p>It becomes much simpler in that case: we&rsquo;ll create two separate repos, one for Hugo&rsquo;s content, and a git submodule with the <code>public</code> folder&rsquo;s content in it.</p>
+
+<p>Step by step:</p>
+
+<ol>
+<li>Create on GitHub <code>&lt;your-project&gt;-hugo</code> repository (it will host Hugo&rsquo;s content)</li>
+<li>Create on GitHub <code>&lt;username&gt;.github.io</code> repository (it will host the <code>public</code> folder: the static website)</li>
+<li><code>git clone &lt;&lt;your-project&gt;-hugo-url&gt; &amp;&amp; cd &lt;your-project&gt;-hugo</code></li>
+<li>Make your website work locally (<code>hugo server --watch -t &lt;yourtheme&gt;</code>)</li>
+<li>Once you are happy with the results, <kbd>Ctrl</kbd>+<kbd>C</kbd> (kill server) and <code>rm -rf public</code> (don&rsquo;t worry, it can always be regenerated with <code>hugo -t &lt;yourtheme&gt;</code>)</li>
+<li><code>git submodule add git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git public</code></li>
+<li>Almost done: add a <code>deploy.sh</code> script to help you (and make it executable: <code>chmod +x deploy.sh</code>):</li>
+</ol>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back
+cd ..
+</code></pre>
+
+<ol>
+<li><code>./deploy.sh &quot;Your optional commit message&quot;</code> to send changes to <code>&lt;username&gt;.github.io</code> (careful, you may also want to commit changes on the <code>&lt;your-project&gt;-hugo</code> repo).</li>
+</ol>
+
+<p>That&rsquo;s it! Your personal page is running at <a href="http://username.github.io/">http://username.github.io/</a> (after up to 10 minutes delay).</p>
+
+<h2 id="conclusion:fcefb200141ace3e7bfd6542457b7a72">Conclusion</h2>
+
+<p>Hopefully this tutorial helped you get your website off its feet and out into the open! If you have any further questions, feel free to contact the community through the <a href="/community/mailing-list/">discussion forum</a>.</p>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

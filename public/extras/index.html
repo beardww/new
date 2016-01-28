@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Extras</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+<main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+
+      
+
+      <h1 id="title">Extras</h1>
+
+      <div id="toc" class="toc full index">
+        <h4 class="toc-title">In Alphabetical Order</h4>
+        
+        <nav id="TableOfContents">      
+          <ul>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/aliases/">Aliases</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/comments/">Comments in Hugo</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/crossreferences/">Cross-References</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/datafiles/">Data Files</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/datadrivencontent/">Data-driven Content</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/builders/">Hugo Builders</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/livereload/">LiveReload</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/menus/">Menus</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/pagination/">Pagination</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/permalinks/">Permalinks</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/scratch/">Scratch</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/shortcodes/">Shortcodes</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/highlighting/">Syntax Highlighting</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/toc/">Table of Contents</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/localfiles/">Traversing Local Files</a>      
+            </li>
+            
+            <li>
+              <a href="http://git.w3w.ca/extras/urls/">URLs</a>      
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+
+      <ul id="list">
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/aliases/">Aliases</a></h3>
+    <p>For people migrating existing published content to Hugo, there&rsquo;s a good chance you need a mechanism to handle redirecting old URLs. Luckily, redirects can be handled easily with aliases in Hugo. Example Given a post on your current Hugo site, with a path of: content/posts/my-awesome-blog-post.md &hellip; you create an &ldquo;aliases&rdquo; section in the frontmatter of your post, and add previous paths to that. TOML frontmatter +++ ... aliases = [ &quot;/posts/my-original-url/&quot;, &quot;/2010/01/01/even-earlier-url.html&quot; ] ...</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 300 words.</em> <a href='http://git.w3w.ca/extras/aliases/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/comments/">Comments in Hugo</a></h3>
+    <p>As Hugo is a static site generator, the content produced is static and doesn’t interact with the users. The most common interaction people ask for is comment capability. Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to website via JavaScript. Your theme may already support Disqus, but even it if doesn’t, it is easy to add. Disqus Support Adding Disqus to a template Hugo comes with all the code you would need to include load Disqus.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 500 words.</em> <a href='http://git.w3w.ca/extras/comments/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/crossreferences/">Cross-References</a></h3>
+    <p>Hugo makes it easy to link documents together with the ref and relref shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between ref and relref is whether the resulting URL is absolute (http://1.com/about/) or relative (/about/). Using ref and relref {{&lt; ref &quot;document&quot; &gt;}} {{&lt; ref &quot;#anchor&quot; &gt;}} {{&lt; ref &quot;document#anchor&quot; &gt;}} {{&lt; relref &quot;document&quot; &gt;}} {{&lt; relref &quot;#anchor&quot; &gt;}} {{&lt; relref &quot;document#anchor&quot; &gt;}} The single parameter to ref is a string with a content document name (about.md), an in-document anchor (#who), or both (about.md#who).</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 1000 words.</em> <a href='http://git.w3w.ca/extras/crossreferences/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/datafiles/">Data Files</a></h3>
+    <p>In addition to the built-in variables available from Hugo, you can specify your own custom data that can be accessed via templates or shortcodes. Hugo supports loading data from YAML, JSON, and TOML files located in the data directory. It even works with LiveReload. Data Files can also be used in themes, but note: If the same key is used in both the main data folder and in the theme&rsquo;s data folder, the main one will win.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 600 words.</em> <a href='http://git.w3w.ca/extras/datafiles/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/datadrivencontent/">Data-driven Content</a></h3>
+    <p>Data-driven content with a static site generator? Yes, it is possible! In addition to the data files feature, we have also implemented the feature &ldquo;Data-driven Content&rdquo;, which lets you load any JSON or CSV file from nearly any resource. &ldquo;Data-driven Content&rdquo; currently consists of two functions, getJSON and getCSV, which are available in all template files. Implementation details Calling the functions with an URL In any HTML template or Markdown document, call the functions like this: {{ $dataJ := getJSON &quot;url&quot; }} {{ $dataC := getCSV &quot;separator&quot; &quot;url&quot; }} or, if you use a prefix or postfix for the URL, the functions accept variadic arguments: {{ $dataJ := getJSON &quot;url prefix&quot; &quot;arg1&quot; &quot;arg2&quot; &quot;arg n&quot; }} {{ $dataC := getCSV &quot;separator&quot; &quot;url prefix&quot; &quot;arg1&quot; &quot;arg2&quot; &quot;arg n&quot; }} The separator for getCSV must be put in the first position and can only be one character long.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 700 words.</em> <a href='http://git.w3w.ca/extras/datadrivencontent/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/builders/">Hugo Builders</a></h3>
+    <p>Hugo provides the functionality to quickly get a site, theme or page started. New Site Want to get a site built quickly? $ hugo new site /path/to/site Hugo will create all the needed directories and files to get started quickly. Hugo will only touch the files and create the directories (in the right places), configuration and content are up to you&hellip; but luckily we have builders for content (see below). New Theme Want to design a new theme?</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 300 words.</em> <a href='http://git.w3w.ca/extras/builders/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/livereload/">LiveReload</a></h3>
+    <p>Hugo may not be the first static site generator to utilize LiveReload technology, but it’s the first to do it right. The combination of Hugo’s insane build speed and LiveReload make crafting your content pure joy. Virtually instantly after you hit save your rebuilt content will appear in your browser. Using LiveReload Hugo comes with LiveReload built in. There are no additional packages to install. A common way to use Hugo while developing a site is to have Hugo run a server and watch for changes: $ hugo server --watch This will run a full functioning web server while simultaneously watching your file system for additions, deletions or changes within your: static files content data files layouts current theme Whenever anything changes Hugo will rebuild the site, continue to serve the content and as soon as the build is finished it will tell the browser and silently reload the page.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 300 words.</em> <a href='http://git.w3w.ca/extras/livereload/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/menus/">Menus</a></h3>
+    <p>Hugo has a simple yet powerful menu system that permits content to be placed in menus with a good degree of control without a lot of work. TIP: If all you want is a simple menu for your sections, see Section Menu for &ldquo;the Lazy Blogger&rdquo;. Some of the features of Hugo Menus: Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch) What is a menu?</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 900 words.</em> <a href='http://git.w3w.ca/extras/menus/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/pagination/">Pagination</a></h3>
+    <p>Hugo supports pagination for the home page, sections and taxonomies. It&rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with where, with its SQL-like operators, first and others &mdash; you can even order the content the way you&rsquo;ve become used to with Hugo. Configuration Pagination can be configured in the site configuration (e.g. config.toml): Paginate (default 10) (this setting can be overridden in the template) PaginatePath (default page) Setting Paginate to a positive value will split the list pages for the home page, sections and taxonomies into chunks of that size.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 600 words.</em> <a href='http://git.w3w.ca/extras/pagination/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/permalinks/">Permalinks</a></h3>
+    <p>By default, content is laid out into the target publishdir (public) namespace matching its layout within the contentdir hierarchy. The permalinks site configuration option allows you to adjust this on a per-section basis. This will change where the files are written to and will change the page&rsquo;s internal &ldquo;canonical&rdquo; location, such that template references to .RelPermalink will honour the adjustments made as a result of the mappings in this option. For instance, if one of your sections is called post, and you want to adjust the canonical path to be hierarchical based on the year and month, then you might use: permalinks: post: /:year/:month/:title/ Only the content under post/ will be so rewritten.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 300 words.</em> <a href='http://git.w3w.ca/extras/permalinks/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/scratch/">Scratch</a></h3>
+    <p>Scratch &ndash; a &ldquo;scratchpad&rdquo; for your node- or page-scoped variables. In most cases you can do well without Scratch, but there are some use cases that aren&rsquo;t solvable with Go&rsquo;s templates without Scratch&rsquo;s help, due to scoping issues. Scratch is added to both Node and Page &ndash; with following methods: * Set and Add takes a key and the value to add. * Get returns the value for the key given.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 300 words.</em> <a href='http://git.w3w.ca/extras/scratch/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/shortcodes/">Shortcodes</a></h3>
+    <p>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. We are unwilling to accept being constrained by our simple format. Also unacceptable is writing raw HTML in our Markdown every time we want to include unsupported content such as a video. To do so is in complete opposition to the intent of using a bare bones format for our content and utilizing templates to apply styling for display.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 1600 words.</em> <a href='http://git.w3w.ca/extras/shortcodes/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/highlighting/">Syntax Highlighting</a></h3>
+    <p>Hugo provides the ability for you to highlight source code in two different ways &mdash; either pre-processed server side from your content, or to defer the processing to the client side, using a JavaScript library. The advantage of server side is that it doesn’t depend on a JavaScript library and consequently works very well when read from an RSS feed. The advantage of client side is that it doesn’t cost anything when building your site and some of the highlighting scripts available cover more languages than Pygments does.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 1000 words.</em> <a href='http://git.w3w.ca/extras/highlighting/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/toc/">Table of Contents</a></h3>
+    <p>Hugo will automatically parse the Markdown for your content and create a Table of Contents you can use to guide readers to the sections within your content. Usage Simply create content like you normally would with the appropriate headers. Hugo will take this Markdown and create a table of contents stored in the content variable .TableOfContents Template Example This is example code of a single.html template. {{ partial &quot;header.html&quot; . }} &lt;div id=&quot;toc&quot; class=&quot;well col-md-4 col-sm-6&quot;&gt; {{ .TableOfContents }} &lt;/div&gt; &lt;h1&gt;{{ .Title }}&lt;/h1&gt; {{ .Content }} {{ partial &quot;footer.html&quot; .</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 100 words.</em> <a href='http://git.w3w.ca/extras/toc/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/localfiles/">Traversing Local Files</a></h3>
+    <p>Traversing Local Files Hugo includes a way to traverse local files. This is done using the &lsquo;readDir&rsquo; function. Using readDir readDir takes a single string input that is relative to the root directory of the site. It returns an array of os.FileInfo Let&rsquo;s create a shortcode to build a file index with links using readDir. &lsquo;fileindex.html&rsquo; &lt;table style=&quot;width=100%&quot;&gt; &lt;th&gt;Size in bytes&lt;/th&gt; &lt;th&gt;Name&lt;/th&gt; {{$dir := .Get &quot;dir&quot;}} {{ $url := .Get</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 200 words.</em> <a href='http://git.w3w.ca/extras/localfiles/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+              <style type="text/css">
+article footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-bottom: 6rem
+}
+</style>
+<article class="post">
+
+  <header>
+    <h3><a href="/extras/urls/">URLs</a></h3>
+    <p>Pretty URLs By default, Hugo creates content with &lsquo;pretty&rsquo; URLs. For example, content created at /content/extras/urls.md will be rendered at /public/extras/urls/index.html, thus accessible from the browser at http://example.com/extras/urls/. No non-standard server-side configuration is required for these pretty URLs to work. If you would like to have what we call &ldquo;ugly URLs&rdquo;, e.g.&nbsp;http://example.com/extras/urls.html, you are in luck. Hugo supports the ability to create your entire site with ugly URLs. Simply add uglyurls = true to your site-wide config.toml, or use the --uglyURLs=true flag on the command line.</p>
+  </header>
+  
+  <footer>
+    <em>Approximately 400 words.</em> <a href='http://git.w3w.ca/extras/urls/'><nobr>Read →</nobr></a>
+  </footer>
+  
+
+</article>
+
+          
+      </ul>
+  
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>

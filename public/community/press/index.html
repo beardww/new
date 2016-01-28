@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+  <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.15" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <title>Hugo - Press, Blogs and Media Coverage</title>
+
+  <link rel="stylesheet" href="http://git.w3w.ca/css/reset.css"> 
+  <link rel="stylesheet" href="http://git.w3w.ca/css/style.css"> 
+  <script src="http://git.w3w.ca/js/modernizr.js"></script> 
+    
+</head>
+<body>
+  <header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="/img/hugo-logo.svg" alt="Logo"></a>
+    
+    <div class="cd-search is-hidden">
+      <form action="#0">
+        <input type="search" placeholder="Search...">
+      </form>
+    </div> 
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+      <ul class="cd-top-nav">  
+        
+          
+            
+
+            <li class="has-children showcases">
+              <a href="">Showcases</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/showcase/" class="children">Sites made with Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="http://themes.gohugo.io" class="children">Themes Showcase</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children community">
+              <a href="">Community</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Discussion Forum</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://github.com/spf13/hugo/issues" class="children">Issues on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/mailing-list/" class="children">Mailing List</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/contributing/" class="children">Contributing to Hugo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/community/press/" class="children">Press &amp; Articles</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children about">
+              <a href="">About Hugo</a>
+              <ul>
+                  
+                  <li>
+                    <a href="http://discuss.gohugo.io" class="children">Source on Github</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/release-notes/" class="children">Release Notes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/roadmap/" class="children">Hugo Roadmap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/meta/license/" class="children">License</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+      </ul>
+    </nav>
+  </header> 
+
+  <main class="cd-main-content">
+   
+    <nav class="cd-side-nav">
+        <ul>
+          <li class="cd-label">Version 0.15</li>
+          <li class="action-btn"><a href="http://git.w3w.ca/">Go Home</a></li>
+        </ul>
+        <ul>        
+          
+          
+            
+
+            <li class="has-children news">
+              <a href="#">News</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/news/cariboo/" class="children">Cariboo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/kootenay/" class="children">Kootenay</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/news/nechako/" class="children">Nechako</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children content">
+              <a href="#">Content</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/content/organization/" class="children">Organization</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/supported-formats/" class="children">Supported Formats</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/front-matter/" class="children">Front Matter</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/sections/" class="children">Sections</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/types/" class="children">Types</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/archetypes/" class="children">Archetypes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/summaries/" class="children">Summaries</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/content/example/" class="children">Example</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children themes">
+              <a href="#">Themes</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/themes/overview/" class="children">Themes Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/installing/" class="children">Installing Themes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/usage/" class="children">Using a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/customizing/" class="children">Customizing a Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/themes/creation/" class="children">Creating a Theme</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children layout">
+              <a href="#">Templates</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/templates/overview/" class="children">Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/go-templates/" class="children">Go Template Primer</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/ace/" class="children">Ace templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/amber/" class="children">Amber templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/functions/" class="children">Functions</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/variables/" class="children">Variables</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/content/" class="children">Single Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/list/" class="children">List of Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/homepage/" class="children">Homepage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/terms/" class="children">Taxonomy Terms</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/views/" class="children">Content Views</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/partials/" class="children">Partial Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/rss/" class="children">RSS</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/sitemap/" class="children">Sitemap</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/404/" class="children">Custom 404 page</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/templates/debugging/" class="children">Debugging</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children taxonomy">
+              <a href="#">Taxonomies</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/taxonomies/usage/" class="children">Usage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/displaying/" class="children">Displaying</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/templates/" class="children">Templates</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/ordering/" class="children">Ordering</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/taxonomies/methods/" class="children">Structure &amp; Methods</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+
+            <li class="has-children extras">
+              <a href="#">Extras</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/extras/aliases/" class="children">Aliases</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/builders/" class="children">Builders</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/comments/" class="children">Comments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/crossreferences/" class="children">Cross-References</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/livereload/" class="children">LiveReload</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/menus/" class="children">Menus</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/permalinks/" class="children">Permalinks</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/pagination/" class="children">Pagination</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/scratch/" class="children">Scratch</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/shortcodes/" class="children">Shortcodes</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datafiles/" class="children">Data Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/highlighting/" class="children">Syntax Highlighting</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/datadrivencontent/" class="children">Data-driven Content</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/toc/" class="children">Table of Contents</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/localfiles/" class="children">Traversing Local Files</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/extras/urls/" class="children">URLs</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Resources</li>        
+          
+          
+                        
+            <li class="has-children tutorials">
+              <a href="#">Tutorials</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/tutorials/automated-deployments/" class="children">Automated deployments</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/creating-a-new-theme/" class="children">Creating a New Theme</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/github-pages-blog/" class="children">Hosting on GitHub</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-mac/" class="children">Installing on Mac</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/installing-on-windows/" class="children">Installing on Windows</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/mathjax/" class="children">MathJax Support</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/tutorials/create-a-multilingual-site/" class="children">Multilingual Site</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+            
+                <li class="tools">
+                  <a href="/tools/">Tools</a>
+              
+                </li>
+          
+        </ul>
+
+        <ul>
+          <li class="cd-label">Other info</li>        
+          
+          
+            
+                <li class="commands">
+                  <a href="/commands/">Cmd Reference</a>
+              
+                </li>
+          
+                        
+            <li class="has-children troubleshooting">
+              <a href="#">Troubleshooting</a>
+              <ul>
+                  
+                  <li>
+                    <a href="/troubleshooting/overview/" class="children">Troubleshooting Overview</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/strange-eof-error/" class="children">Strange EOF error</a>
+                  </li>
+                  
+                  <li>
+                    <a href="/troubleshooting/categories-with-accented-characters/" class="children">Accented Categories</a>
+                  </li>
+                  
+              </ul>
+              
+                </li>
+          
+        </ul>
+
+      </nav>
+
+    <div class="content-wrapper">
+
+      <h1>Press, Blogs and Media Coverage</h1>
+
+      
+
+      
+
+<h3 id="help-keep-this-list-up-to-date:13f2c33e35789d3bcaffb9a540435f74">Help keep this list up to date</h3>
+
+<p>Know of a post, article or tutorial on hugo? <a href="https://github.com/spf13/hugo/edit/master/docs/content/community/press.md">Add it to this list</a>.</p>
+
+<h2 id="press-and-articles:13f2c33e35789d3bcaffb9a540435f74">Press and Articles</h2>
+
+<p>Hugo has been featured in the following Blog Posts, Press and Media.</p>
+
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th align="right">Date</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/">Static Website Generators Reviewed: Jekyll, Middleman, Roots, Hugo</a></td>
+<td><div style="line-height: 100%">Mathias Biilmann Christensen</div></td>
+<td align="right">16 Nov 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://usersnap.com/blog/hands-on-experience-with-hugo-static-site-generator/">Hands-on Experience with Hugo as a Static Site Generator</a></td>
+<td>Thomas Peham</td>
+<td align="right">15 Oct 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://abhipandey.com/2015/09/moving-to-hugo/">Moving from WordPress to Hugo</a></td>
+<td>Abhishek Pandey</td>
+<td align="right">15 Sep 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.coderzh.com/2015/09/13/use-webhook-automated-deploy-hugo/">通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages <small>(Automated&nbsp;deployment)</small></a></td>
+<td>CoderZh</td>
+<td align="right">13 Sep 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.coderzh.com/2015/08/29/hugo/">使用hugo搭建个人博客站点 <small>(Using Hugo to build a personal blog site)</small></a></td>
+<td>CoderZh</td>
+<td align="right">29 Aug 2015</td>
+</tr>
+
+<tr>
+<td><a href="https://snipcart.com/blog/snipcart-hugo-integration">Static Site E-Commerce: Integrating Snipcart with Hugo</a></td>
+<td>Francis Tremblay</td>
+<td align="right">13 Aug 2015</td>
+</tr>
+
+<tr>
+<td><a href="https://www.netlify.com/blog/2015/07/30/hugo-on-netlify-insanely-fast-deploys.html">Hugo on Netlify — Insanely Fast Deploys</a></td>
+<td>Mathias Biilmann</td>
+<td align="right">30 July 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://www.linux-pratique.com/?p=191">Générer votre site web statique avec Hugo <small>(Generate your static site with Hugo)<small></a></td>
+<td>Benoît Benedetti</td>
+<td align="right">26 June 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://yet.unresolved.xyz/blog/2015/06/20/making-new-theme-robust-for-hugo/">Hugo向けの新しいテーマを作った <small>(I created a new theme for Hugo)<small></a></td>
+<td>Daisuke Tsuji</td>
+<td align="right">20&nbsp;June&nbsp;2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.ffrizzo.com/posts/hugo/">Hugo - Gerando um site com conteúdo estático. (Portuguese Brazil)</a></td>
+<td>Fabiano Frizzo</td>
+<td align="right">2 Jun 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://davidwalsh.name/introduction-static-site-generators">An Introduction to Static Site Generators</a></td>
+<td>Eduardo Bouças</td>
+<td align="right">20 May 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://cheekycoder.com/2015/05/hugo-still-rules/">Hugo Still Rules</a></td>
+<td>Cheeky Coder</td>
+<td align="right">18 May 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://gscacco.github.io/post/hugo/">hugo - Static Site Generator</a></td>
+<td>G Scaccoio</td>
+<td align="right">4 May 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://ureta.net/2015/05/hugo-on-windows/">WindowsでHugoを使う</a></td>
+<td>うれ太郎</td>
+<td align="right">1 May 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.yucchiy.com/2015/04/29/hugo-shortcode/">Hugoのshortcodesを用いてサイトにスライドなどを埋め込む</a></td>
+<td>Yucchiy</td>
+<td align="right">29 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://hori-ryota.github.io/blog/create-blog-with-hugo-and-circleci/">HugoとCircleCIでGitHub PagesにBlogを公開してみたら超簡単だった</a></td>
+<td>Hori Ryota</td>
+<td align="right">17 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://jbrodriguez.io/mobile-friendly-website-2/">How to build a mobile friendly website Part 2 - Ok to Go</a></td>
+<td>Juan B. Rodriguez</td>
+<td align="right">13 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://beebom.com/2015/04/best-static-site-generators">10 Best Static Site Generators</a></td>
+<td>Aniruddha Mysore</td>
+<td align="right">6 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://willwarren.com/2015/04/05/goodbye-wordpress-hello-hugo/">Goodbye WordPress; Hello Hugo</a></td>
+<td>Will Warren</td>
+<td align="right">5 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://www.moxie.io/post/static-websites-with-hugo-on-google-cloud-storage/">Static Websites with Hugo on Google Cloud Storage</a></td>
+<td>Moxie Input/Output</td>
+<td align="right">2 Apr 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://alvarolizama.net/blog/denuevo-iniciando-un-blog/">De nuevo iniciando un blog</a></td>
+<td>Alvaro Lizama</td>
+<td align="right">29 Mar 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.hypriot.com/post/moved-from-posthaven-to-hugo/">We moved our blog from Posthaven to Hugo after only three posts. Why?</a></td>
+<td>Hypriot</td>
+<td align="right">27 Mar 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://tnt.wicast.tk/2015/03/23/hugo-is-cool/">Hugo is cool</a> <small>(中文 Chinese)</small></td>
+<td>wicast</td>
+<td align="right">23 Mar 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://superdevresources.com/static-site-generators-2015/">Top Static Site Generators in 2015</a></td>
+<td>Kanishk Kunal</td>
+<td align="right">12 Mar 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://abiosoft.com/moving-to-hugo/">Moving to Hugo</a></td>
+<td>Abiola Ibrahim</td>
+<td align="right">8 Mar 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://deprode.net/log/logs/first/">Hugoで試行錯誤する - log</a></td>
+<td>Deprode</td>
+<td align="right">28 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://justindunham.net/migrating-from-wordpress-to-hugo/">Migrating a blog (yes, this one!) from Wordpress to Hugo</a></td>
+<td>Justin Dunham</td>
+<td align="right">13 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://hucsmn.com/post/hugo-tutorial-make-it-work/">服务器上 hugo 的安装和配置 <small>(Installing and configuring Hugo on the server)</small></a></td>
+<td>hucsmn</td>
+<td align="right">11 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.jigyakkuma.org/2015/02/11/hugo/">blogをoctopressからHugoに乗り換えたメモ</a></td>
+<td>jigyakkuma</td>
+<td align="right">11 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://porgy13.github.io/post/new-hugo-blog/">Hugoでブログをつくった</a></td>
+<td>porgy13</td>
+<td align="right">7 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://keichi.net/post/first/">Hugoにブログを移行した</a></td>
+<td>Keichi Takahashi</td>
+<td align="right">4 Feb 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://nanshu.wang/post/2015-01-31/">Hugo静态网站生成器中文教程</a></td>
+<td>Nanshu Wang</td>
+<td align="right">31 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://qiita.com/yoheimuta/items/8a619cac356bed89a4c9">Hugo + Github Pages + Wercker CI = ¥0（無料）<br>でコマンド 1 発（自動化）でサイト<br>・ブログを公開・運営・分析・収益化</a></td>
+<td>Yohei Yoshimuta</td>
+<td align="right">31 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.anynines.com/running-hugo-websites-on-anynines/">Running Hugo websites on anynines</a></td>
+<td>Julian Weber</td>
+<td align="right">30 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://re-dzine.net/2015/01/hugo/">MiddlemanからHugoへ移行した</a></td>
+<td>Haruki Konishi</td>
+<td align="right">21 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://rakuishi.com/archives/wordpress-to-hugo/">WordPress から Hugo に乗り換えました</a></td>
+<td>rakuishi</td>
+<td align="right">20 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://qiita.com/syui/items/869538099551f24acbbf">HUGOを使ってサイトを立ち上げる方法</a></td>
+<td>Syui</td>
+<td align="right">17 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://t32k.me/mol/log/hugo/">Jekyllが許されるのは小学生までだよね</a></td>
+<td>Ishimoto Koji</td>
+<td align="right">16 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://anthonyfok.org/post/getting-started-with-hugo/">Getting started with Hugo</a></td>
+<td>Anthony Fok</td>
+<td align="right">12 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://lich-eng.com/2015/01/03/migrate-to-hugo/">把这个博客静态化了 <small>(Migrate to Hugo)</small></a></td>
+<td>Li Cheng</td>
+<td align="right">3 Jan 2015</td>
+</tr>
+
+<tr>
+<td><a href="http://tilde.club/~jbaty/2014/12/2014-12-31-my-hugo-experiment/">My Hugo Experiment</a></td>
+<td>Jack Baty</td>
+<td align="right">31 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.srackham.com/posts/porting-my-blog-with-hugo/">Porting my blog with Hugo</a></td>
+<td>Stuart Rackham</td>
+<td align="right">30 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://machortz.github.io/posts/usinghugo/">Hugoを使ってみたときのメモ</a></td>
+<td>Machortz</td>
+<td align="right">29 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://deeeet.com/writing/2014/12/25/hugo/">OctopressからHugoへ移行した</a></td>
+<td>Taichi Nakashima</td>
+<td align="right">25 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://cdpython.github.io/post/go/hugo/hugo-github/">Hugo로 Github에 블로그 호스팅하기</a></td>
+<td>CD Python</td>
+<td align="right">25 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://nathanleclaire.com/blog/2014/12/22/migrating-to-hugo-from-octopress/">Migrating to Hugo From Octopress</a></td>
+<td>Nathan LeClaire</td>
+<td align="right">22 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://cyrillschumacher.com/2014/12/21/dynamic-pages-with-gohugo.io/">Dynamic Pages with GoHugo.io</a></td>
+<td>Cyrill Schumacher</td>
+<td align="right">21 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.sitepoint.com/6-static-blog-generators-arent-jekyll/">6 Static Blog Generators That Aren’t Jekyll</a></td>
+<td>David Turnbull</td>
+<td align="right">8 Dec 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.stou.dk/2014/11/travel-blogging-setup/">Travel Blogging Setup</a></td>
+<td>Rasmus Stougaard</td>
+<td align="right">23 Nov 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.bigbeeconsultants.co.uk/blog/hosting-hugo-website-behind-nginx">Hosting A Hugo Website Behind Nginx</a></td>
+<td>Rick Beton</td>
+<td align="right">20 Nov 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://ulricqin.com/post/how-to-use-hugo/">使用Hugo搭建免费个人Blog <small>(How to use Hugo)</small></a></td>
+<td>Ulric Qin 秦晓辉</td>
+<td align="right">11 Nov 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://cheekycoder.com/2014/10/built-for-speed-by-hugo/">Built in Speed and Built for Speed by Hugo</a></td>
+<td>Cheeky Coder</td>
+<td align="right">30 Oct 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://fredix.ovh/2014/10/hugo-syncthing/">hugo, syncthing</a></td>
+<td>Frédéric Logier</td>
+<td align="right">13 Oct 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.webbizarro.com/noticias/1076/hugo-para-crear-sitios-web-estaticos/">Hugo para crear sitios web estáticos</a></td>
+<td>Web Bizarro</td>
+<td align="right">19 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.markuseliasson.se/article/going-with-hugo/">Going with hugo</a></td>
+<td>Markus Eliasson</td>
+<td align="right">18 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://fredrikloch.me/post/2014-08-12-Jekyll-and-its-alternatives-from-a-site-generation-point-of-view/">Benchmarking Jekyll, Hugo and Wintersmith</a></td>
+<td>Fredrik Loch</td>
+<td align="right">12 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://andreimihu.com/blog/2014/08/11/goodbye-octopress-hello-hugo/">Goodbye Octopress, Hello Hugo!</a></td>
+<td>Andrei Mihu</td>
+<td align="right">11 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://beautifulopen.com/2014/08/09/hugo/">Beautiful sites for Open Source projects</a></td>
+<td>Beautiful Open</td>
+<td align="right">9 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://npf.io/2014/08/hugo-beyond-the-defaults/">Hugo: Beyond the Defaults</a></td>
+<td>Nate Finch</td>
+<td align="right">8 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="https://peteraba.com/blog/first-impressions-of-hugo/">First Impressions of Hugo</a></td>
+<td>Peter Aba</td>
+<td align="right">6 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://vurt.co.uk/post/new_website/">New Site Workflow</a></td>
+<td>Giles Paterson</td>
+<td align="right">5 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://cognition.ca/post/about-hugo/">How I Learned to Stop Worrying and Love the (Static) Web</a></td>
+<td>Joshua McKenty</td>
+<td align="right">4 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://kenwoo.io/blog/hugo---static-site-generator/">Hugo - Static Site Generator</a></td>
+<td>Kenny Woo</td>
+<td align="right">3 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://npf.io/2014/08/hugo-is-awesome/">Hugo Is Friggin&rsquo; Awesome</a></td>
+<td>Nate Finch</td>
+<td align="right">1 Aug 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.chingli.com/misc/move-from-wordpress-to-hugo/">再次搬家 <small>(Move from WordPress to Hugo)</small></a></td>
+<td>青砾 (chingli)</td>
+<td align="right">12 July 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://danmux.com/posts/embedded_gists/">Embedding Gists in Hugo</a></td>
+<td>Dan Mull</td>
+<td align="right">5 July 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.cirrushosting.com/web-hosting-blog/an-introduction-to-hugo/">An Introduction To Hugo</a></td>
+<td>Dan Silber</td>
+<td align="right">1 July 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://danmux.com/posts/hugo_based_blog/">Moving to Hugo</a></td>
+<td>Dan Mull</td>
+<td align="right">29 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://code.csdn.net/news/2819909">开源之静态站点生成器排行榜<br><small>(Leaderboard of open-source static website generators)</small></a></td>
+<td>CSDN.net</td>
+<td align="right">23 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://carlorat.me/quote/fabric/">How I deploy this site using Fabric</a></td>
+<td>Carlo Ratam</td>
+<td align="right">21 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://michaelwhatcott.com/now-powered-by-hugo/">Finally, a satisfying and effective blog setup</a></td>
+<td>Michael Whatcott</td>
+<td align="right">20 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://zackofalltrades.com/notes/2014/05/hugo-from-scratch/">Hugo from scratch</a></td>
+<td>Zack Williams</td>
+<td align="right">18 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.jakejanuzelli.com/why-I-switched-away-from-jekyll/">Why I switched away from Jekyll</a></td>
+<td>Jake Januzelli</td>
+<td align="right">10 May 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://blog.ninya.io/posts/welcome-our-new-blog/">Welcome our new blog</a></td>
+<td>Ninya.io</td>
+<td align="right">11 Apr 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://johnsto.co.uk/blog/mission-not-accomplished/">Mission Not Accomplished</a></td>
+<td>Dave Johnston</td>
+<td align="right">3 Apr 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://deepfriedcode.com/post/hugo/">Hugo - A Static Site Builder in Go</a></td>
+<td>Deep Fried Code</td>
+<td align="right">30 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://devchat.tv/adventures-in-angular/003-aia-gdes">Adventures in Angular Podcast</a></td>
+<td>Matias Niemela</td>
+<td align="right">28 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://bra.am/post/hugo/">Hugo</a></td>
+<td>bra.am</td>
+<td align="right">23 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://trishagee.github.io/project/atom-to-hugo/">Converting Blogger To Markdown</a></td>
+<td>Trisha Gee</td>
+<td align="right">20 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://tepid.org/tech/hugo-web/">Moving to Hugo Static Web Pages</a></td>
+<td>Tobias Weingartner</td>
+<td align="right">16 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://spencerlyon.com/blog/2014/creating-the-site/">Hugo and GitHub Pages</a></td>
+<td>Spencer Lyon</td>
+<td align="right">15 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="https://blog.afoolishmanifesto.com/posts/hugo/">New Blog Engine: Hugo</a></td>
+<td>fREW Schmidt</td>
+<td align="right">15 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://ktmud.github.io/huggle/en/intro/">Hugo + gulp.js = Huggle</a> (<a href="http://ktmud.github.io/huggle/en/intro/">English</a>, <a href="http://ktmud.github.io/huggle/zh/intro/">中文</a>)</td>
+<td>Jesse Yang 杨建超</td>
+<td align="right">8 Mar 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://kieranhealy.org/blog/archives/2014/02/24/powered-by-hugo/">Powered by Hugo</a></td>
+<td>Kieran Healy</td>
+<td align="right">24 Feb 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://hamasyou.com/blog/2014/02/21/hugo/">静的サイトを素早く構築するために<br>GoLangで作られたジェネレータHugo</a></td>
+<td><div style="line-height: 1.1;">Shogo Hamada<br>濱田章吾</div></td>
+<td align="right">21 Feb 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://codegeekz.com/latest-roundup-of-useful-tools-for-developers/">Latest Roundup of Useful Tools For Developers</a></td>
+<td>CodeGeekz</td>
+<td align="right">13 Feb 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.braveterry.com/2014/02/06/hugo-static-site-generator-written-in-go/">Hugo: Static Site Generator written in Go</a></td>
+<td>Brave Terry</td>
+<td align="right">6 Feb 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://designdizzy.com/10-useful-html5-tools-for-web-designers-and-developers/">10 Useful HTML5 Tools for Web Designers and Developers</a></td>
+<td>Design Dizzy</td>
+<td align="right">4 Feb 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://cube3x.com/hugo-fast-flexible-static-site-generator/">Hugo – Fast, Flexible Static Site Generator</a></td>
+<td>Joby Joseph</td>
+<td align="right">18 Jan 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.w3update.com/opensource/hugo-a-new-way-to-build-static-website.html">Hugo: A new way to build static website</a></td>
+<td>w3update</td>
+<td align="right">17 Jan  2014</td>
+</tr>
+
+<tr>
+<td><a href="http://xaprb.com/blog/2014/01/15/using-hugo/">Xaprb now uses Hugo</a></td>
+<td>Baron Schwartz</td>
+<td align="right">15 Jan 2014</td>
+</tr>
+
+<tr>
+<td><a href="http://www.designyourway.net/blog/resources/new-jquery-plugins-and-resources-that-web-designers-need/">New jQuery Plugins And Resources That Web Designers Need</a></td>
+<td>Design Your Way</td>
+<td align="right">2014</td>
+</tr>
+
+<tr>
+<td><a href="http://alexla.sh/post/on-blog-construction/">On Blog Construction</a></td>
+<td>Alexander Lash</td>
+<td align="right">27 Dec 2013</td>
+</tr>
+
+<tr>
+<td><a href="http://onethingwell.org/post/69070926608/hugo">Hugo</a></td>
+<td>One Thing Well</td>
+<td align="right">5 Dec 2013</td>
+</tr>
+
+<tr>
+<td><a href="http://sound-guru.com/blog/post/hello-world/">In Praise Of Hugo</a></td>
+<td>sound-guru.com</td>
+<td align="right">19 Oct 2013</td>
+</tr>
+
+<tr>
+<td><a href="http://www.danesparza.net/2013/07/hosting-a-blog-on-s3-and-cloudfront/">Hosting a blog on S3 and Cloudfront</a></td>
+<td>Dan Esparza</td>
+<td align="right">24 July 2013</td>
+</tr>
+</tbody>
+</table>
+
+    
+    </div> 
+  
+  </main> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+  <script src="http://git.w3w.ca//js/main.min.js"></script>
+
+  <script>
+  
+  hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+
+
+</script>
+
+
+</body>
+</html>
