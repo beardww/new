@@ -484,172 +484,163 @@
 
       <h1>INDEX</h1>
 
-<img src="https://raw.githubusercontent.com/spf13/hugo/master/docs/static/img/hugo-logo.png" alt="Hugo" /></p>
+![Hugo](https://raw.githubusercontent.com/spf13/hugo/master/docs/static/img/hugo-logo.png)
 
-<p>A Fast and Flexible Static Site Generator built with love by <a href="http://spf13.com/">spf13</a> and <a href="https://github.com/spf13/hugo/graphs/contributors">friends</a> in <a href="https://golang.org/">Go</a>.</p>
+A Fast and Flexible Static Site Generator built with love by [spf13](http://spf13.com/) and [friends](https://github.com/spf13/hugo/graphs/contributors) in [Go][].
 
-<p><a href="http://gohugo.io">Website</a> |
-<a href="http://discuss.gohugo.io">Forum</a> |
-<a href="https://gitter.im/spf13/hugo">Dev Chat</a> |
-<a href="http://gohugo.io/overview/introduction/">Documentation</a> |
-<a href="http://gohugo.io/overview/installing/">Installation Guide</a> |
-<a href="http://twitter.com/spf13">Twitter</a></p>
+[Website](http://gohugo.io) |
+[Forum](http://discuss.gohugo.io) |
+[Dev Chat](https://gitter.im/spf13/hugo) |
+[Documentation](http://gohugo.io/overview/introduction/) |
+[Installation Guide](http://gohugo.io/overview/installing/) |
+[Twitter](http://twitter.com/spf13)
 
-<p><a href="https://travis-ci.org/spf13/hugo"><img src="https://api.travis-ci.org/spf13/hugo.svg?branch=master" alt="Travis CI status" title="Travis CI status" /></a>
-<a href="https://app.wercker.com/project/bykey/1a0de7d703ce3b80527f00f675e1eb32"><img src="https://app.wercker.com/status/1a0de7d703ce3b80527f00f675e1eb32/s/master" alt="wercker status" title="wercker status" /></a>
-<a href="https://ci.appveyor.com/project/spf13/hugo/branch/master"><img src="https://ci.appveyor.com/api/projects/status/n2mo912b8s2505e8/branch/master?svg=true" alt="Appveyor status" title="Appveyor status" /></a>
-<a href="https://circleci.com/gh/spf13/hugo"><img src="https://circleci.com/gh/spf13/hugo.png?circle-token=:circle-token" alt="CircleCI status" title="CircleCI status" /></a>
-<a href="https://gitter.im/spf13/hugo?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://img.shields.io/badge/gitter-dev_chat-46bc99.svg" alt="Dev chat at https://gitter.im/spf13/hugo" /></a></p>
+[![Travis CI status](https://api.travis-ci.org/spf13/hugo.svg?branch=master &#34;Travis CI status&#34;)](https://travis-ci.org/spf13/hugo)
+[![wercker status](https://app.wercker.com/status/1a0de7d703ce3b80527f00f675e1eb32/s/master &#34;wercker status&#34;)](https://app.wercker.com/project/bykey/1a0de7d703ce3b80527f00f675e1eb32)
+[![Appveyor status](https://ci.appveyor.com/api/projects/status/n2mo912b8s2505e8/branch/master?svg=true &#34;Appveyor status&#34;)](https://ci.appveyor.com/project/spf13/hugo/branch/master)
+[![CircleCI status](https://circleci.com/gh/spf13/hugo.png?circle-token=:circle-token &#34;CircleCI status&#34;)](https://circleci.com/gh/spf13/hugo)
+[![Dev chat at https://gitter.im/spf13/hugo](https://img.shields.io/badge/gitter-dev_chat-46bc99.svg)](https://gitter.im/spf13/hugo?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge)
 
-<h2 id="overview">Overview</h2>
+## Overview
 
-<p>Hugo is a static HTML and CSS website generator written in <a href="https://golang.org/">Go</a>.
+Hugo is a static HTML and CSS website generator written in [Go][].
 It is optimized for speed, easy use and configurability.
-Hugo takes a directory with content and templates and renders them into a full HTML website.</p>
+Hugo takes a directory with content and templates and renders them into a full HTML website.
 
-<p>Hugo relies on Markdown files with front matter for meta data.
+Hugo relies on Markdown files with front matter for meta data.
 And you can run Hugo from any directory.
-This works well for shared hosts and other systems where you don’t have a privileged account.</p>
+This works well for shared hosts and other systems where you don’t have a privileged account.
 
-<p>Hugo renders a typical website of moderate size in a fraction of a second.
-A good rule of thumb is that each piece of content renders in around 1 millisecond.</p>
+Hugo renders a typical website of moderate size in a fraction of a second.
+A good rule of thumb is that each piece of content renders in around 1 millisecond.
 
-<p>Hugo is designed to work well for any kind of website including blogs, tumbles and docs.</p>
+Hugo is designed to work well for any kind of website including blogs, tumbles and docs.
 
-<h4 id="supported-architectures">Supported Architectures</h4>
+#### Supported Architectures
 
-<p>Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD and OS&nbsp;X (Darwin) for x64, i386 and ARM architectures.</p>
+Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD and OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
 
-<p>Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&nbsp;9 and Solaris.</p>
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris.
 
-<p><strong>Complete documentation is available at <a href="https://gohugo.io/overview/introduction/">Hugo Documentation</a>.</strong></p>
+**Complete documentation is available at [Hugo Documentation][].**
 
-<h2 id="choose-how-to-install">Choose How to Install</h2>
+## Choose How to Install
 
-<p>If you want to use Hugo as your site generator, simply install the Hugo binaries.
-The Hugo binaries have no external dependencies.</p>
+If you want to use Hugo as your site generator, simply install the Hugo binaries.
+The Hugo binaries have no external dependencies.
 
-<p>To contribute to the Hugo source code or documentation, you should <a href="https://github.com/spf13/hugo#fork-destination-box">fork the Hugo GitHub project</a> and clone it to your local machine.</p>
+To contribute to the Hugo source code or documentation, you should [fork the Hugo GitHub project](https://github.com/spf13/hugo#fork-destination-box) and clone it to your local machine.
 
-<p>Finally, you can install the Hugo source code with <code>go</code>, build the binaries yourself, and run Hugo that way.
-Building the binaries is an easy task for an experienced <code>go</code> getter.</p>
+Finally, you can install the Hugo source code with `go`, build the binaries yourself, and run Hugo that way.
+Building the binaries is an easy task for an experienced `go` getter.
 
-<h3 id="install-hugo-as-your-site-generator-binary-install">Install Hugo as Your Site Generator (Binary Install)</h3>
+### Install Hugo as Your Site Generator (Binary Install)
 
-<p>Use the <a href="http://gohugo.io/overview/installing/">installation instructions in the Hugo documentation</a>.</p>
+Use the [installation instructions in the Hugo documentation](http://gohugo.io/overview/installing/).
 
-<h3 id="clone-the-hugo-project-contributor">Clone the Hugo Project (Contributor)</h3>
+### Clone the Hugo Project (Contributor)
 
-<ol>
-<li><p>Make sure your local environment has the following software installed:</p>
+1. Make sure your local environment has the following software installed:
 
-<ul>
-<li><a href="https://git-scm.com/">Git</a></li>
-<li><a href="https://www.mercurial-scm.org/">Mercurial</a></li>
-<li><a href="https://golang.org/">Go</a> 1.5+</li>
-</ul></li>
+    * [Git](https://git-scm.com/)
+    * [Mercurial](https://www.mercurial-scm.org/)
+    * [Go][] 1.5&#43;
 
-<li><p><a href="https://github.com/spf13/hugo">Fork the Hugo project on GitHub</a>.</p></li>
+2. [Fork the Hugo project on GitHub](https://github.com/spf13/hugo).
 
-<li><p>Clone your fork:</p>
+3. Clone your fork:
 
-<pre><code>git clone https://github.com/YOURNAME/hugo
-</code></pre></li>
+        git clone https://github.com/YOURNAME/hugo
 
-<li><p>Change into the <code>hugo</code> directory:</p>
+4. Change into the `hugo` directory:
 
-<pre><code>cd hugo
-</code></pre></li>
+        cd hugo
 
-<li><p>Install the Hugo project’s package dependencies:</p>
+5. Install the Hugo project’s package dependencies:
 
-<pre><code>go get -u -v github.com/spf13/hugo
-</code></pre></li>
+        go get -u -v github.com/spf13/hugo
 
-<li><p>Use a symbolic link to add your locally cloned Hugo repository to your <code>$GOPATH</code>, assuming you prefer doing development work outside of <code>$GOPATH</code>:</p>
+6. Use a symbolic link to add your locally cloned Hugo repository to your `$GOPATH`, assuming you prefer doing development work outside of `$GOPATH`:
 
-<pre><code class="language-bash">rm -rf &quot;$GOPATH/src/github.com/spf13/hugo&quot;
-ln -s `pwd` &quot;$GOPATH/src/github.com/spf13/hugo&quot;
-</code></pre>
+    ```bash
+    rm -rf &#34;$GOPATH/src/github.com/spf13/hugo&#34;
+    ln -s `pwd` &#34;$GOPATH/src/github.com/spf13/hugo&#34;
+    ```
 
-<p>Go expects all of your libraries to be found in<code>$GOPATH</code>.</p></li>
-</ol>
+    Go expects all of your libraries to be found in`$GOPATH`.
 
-<h3 id="build-and-install-the-binaries-from-source-advanced-install">Build and Install the Binaries from Source (Advanced Install)</h3>
+### Build and Install the Binaries from Source (Advanced Install)
 
-<p>Add Hugo and its package dependencies to your go <code>src</code> directory.</p>
+Add Hugo and its package dependencies to your go `src` directory.
 
-<pre><code>go get -v github.com/spf13/hugo
-</code></pre>
+    go get -v github.com/spf13/hugo
 
-<p>Once the <code>get</code> completes, you should find your new <code>hugo</code> (or <code>hugo.exe</code>) executable sitting inside <code>$GOPATH/bin/</code>.</p>
+Once the `get` completes, you should find your new `hugo` (or `hugo.exe`) executable sitting inside `$GOPATH/bin/`.
 
-<p>To update Hugo’s dependencies, use <code>go get</code> with the <code>-u</code> option.</p>
+To update Hugo’s dependencies, use `go get` with the `-u` option.
 
-<pre><code>go get -u -v github.com/spf13/hugo
-</code></pre>
+    go get -u -v github.com/spf13/hugo
 
-<h2 id="contribute-to-hugo">Contribute to Hugo</h2>
+## Contribute to Hugo
 
-<p>We welcome contributions to Hugo of any kind including documentation, themes, organization, tutorials, blog posts, bug reports, issues, feature requests, feature implementation, pull requests, answering questions on the forum, helping to manage issues, etc.</p>
+We welcome contributions to Hugo of any kind including documentation, themes, organization, tutorials, blog posts, bug reports, issues, feature requests, feature implementation, pull requests, answering questions on the forum, helping to manage issues, etc.
 
-<p>The Hugo community and maintainers are very active and helpful and the project benefits greatly from this activity.</p>
+The Hugo community and maintainers are very active and helpful and the project benefits greatly from this activity.
 
-<p><a href="https://waffle.io/spf13/hugo/metrics"><img src="https://graphs.waffle.io/spf13/hugo/throughput.svg" alt="Throughput Graph" /></a></p>
+[![Throughput Graph](https://graphs.waffle.io/spf13/hugo/throughput.svg)](https://waffle.io/spf13/hugo/metrics)
 
-<p>If you have any questions about how to contribute or what to contribute, please ask on the <a href="http://discuss.gohugo.io">forum</a>.</p>
+If you have any questions about how to contribute or what to contribute, please ask on the [forum](http://discuss.gohugo.io).
 
-<h2 id="code-contribution-guideline">Code Contribution Guideline</h2>
+## Code Contribution Guideline
 
-<p>We welcome your contributions.
-To make the process as seamless as possible, we ask for the following:</p>
+We welcome your contributions.
+To make the process as seamless as possible, we ask for the following:
 
-<ul>
-<li>Go ahead and fork the project and make your changes. We encourage pull requests to discuss code changes.</li>
-<li>When you’re ready to create a pull request, be sure to:
+* Go ahead and fork the project and make your changes. We encourage pull requests to discuss code changes.
+* When you’re ready to create a pull request, be sure to:
+     * Sign the [CLA](https://cla-assistant.io/spf13/hugo)
+     * Have test cases for the new code. If you have questions about how to do it, please ask in your pull request.
+     * Run `go fmt`
+     * Squash your commits into a single commit. `git rebase -i`. It’s okay to force update your pull request.
+     * **Write a good commit message.** This [blog article](http://chris.beams.io/posts/git-commit) is a good resource for learning how to write good commit messages, the most important part being that each commit message should have a title/subject in imperative mood starting with a capital letter and no trailing period: *&#34;Return error on wrong use of the Paginator&#34;*, **NOT** *&#34;returning some error.&#34;* Also, if your commit references one or more GitHub issues, always end your commit message body with *See #1234* or *Fixes #1234*. Replace *1234* with the GitHub issue ID. The last example will close the issue when the commit is merged into *master*.
+     * Make sure `go test ./...` passes, and `go build` completes. Our [Travis CI loop](https://travis-ci.org/spf13/hugo) (Linux and OS&amp;nbsp;X) and [AppVeyor](https://ci.appveyor.com/project/spf13/hugo/branch/master) (Windows) will catch most things that are missing.
 
-<ul>
-<li>Sign the <a href="https://cla-assistant.io/spf13/hugo">CLA</a></li>
-<li>Have test cases for the new code. If you have questions about how to do it, please ask in your pull request.</li>
-<li>Run <code>go fmt</code></li>
-<li>Squash your commits into a single commit. <code>git rebase -i</code>. It’s okay to force update your pull request.</li>
-<li><strong>Write a good commit message.</strong> This <a href="http://chris.beams.io/posts/git-commit">blog article</a> is a good resource for learning how to write good commit messages, the most important part being that each commit message should have a title/subject in imperative mood starting with a capital letter and no trailing period: <em>&ldquo;Return error on wrong use of the Paginator&rdquo;</em>, <strong>NOT</strong> <em>&ldquo;returning some error.&rdquo;</em> Also, if your commit references one or more GitHub issues, always end your commit message body with <em>See #1234</em> or <em>Fixes #1234</em>. Replace <em>1234</em> with the GitHub issue ID. The last example will close the issue when the commit is merged into <em>master</em>.</li>
-<li>Make sure <code>go test ./...</code> passes, and <code>go build</code> completes. Our <a href="https://travis-ci.org/spf13/hugo">Travis CI loop</a> (Linux and OS&nbsp;X) and <a href="https://ci.appveyor.com/project/spf13/hugo/branch/master">AppVeyor</a> (Windows) will catch most things that are missing.</li>
-</ul></li>
-</ul>
+### Build Hugo with Your Changes
 
-<h3 id="build-hugo-with-your-changes">Build Hugo with Your Changes</h3>
-
-<pre><code class="language-bash">cd /path/to/hugo
+```bash
+cd /path/to/hugo
 go build -o hugo main.go
 mv hugo /usr/local/bin/
-</code></pre>
+```
 
-<h3 id="add-compile-information-to-hugo">Add Compile Information to Hugo</h3>
+### Add Compile Information to Hugo
 
-<p>To add compile information to Hugo, replace the <code>go build</code> command with the following <em>(replace <code>/path/to/hugo</code> with the actual path)</em>:</p>
+To add compile information to Hugo, replace the `go build` command with the following *(replace `/path/to/hugo` with the actual path)*:
 
-<pre><code>go build -ldflags &quot;-X /path/to/hugo/hugolib.CommitHash=`git rev-parse --short HEAD 2&gt;/dev/null` -X github.com/spf13/hugo/hugolib.BuildDate=`date +%FT%T%z`&quot;
-</code></pre>
+    go build -ldflags &#34;-X /path/to/hugo/hugolib.CommitHash=`git rev-parse --short HEAD 2&gt;/dev/null` -X github.com/spf13/hugo/hugolib.BuildDate=`date &#43;%FT%T%z`&#34;
 
-<p>This will result in <code>hugo version</code> output that looks similar to:</p>
+This will result in `hugo version` output that looks similar to:
 
-<pre><code>Hugo Static Site Generator v0.13-DEV-8042E77 buildDate: 2014-12-25T03:25:57-07:00
-</code></pre>
+    Hugo Static Site Generator v0.13-DEV-8042E77 buildDate: 2014-12-25T03:25:57-07:00
 
-<p>Alternatively, just run <code>make</code> &mdash; all the “magic” above is already in the <code>Makefile</code>.  :wink:</p>
+Alternatively, just run `make` &amp;mdash; all the “magic” above is already in the `Makefile`.  :wink:
 
-<h3 id="run-hugo">Run Hugo</h3>
+### Run Hugo
 
-<pre><code class="language-bash">cd /path/to/hugo
+```bash
+cd /path/to/hugo
 go install github.com/spf13/hugo/hugolib
 go run main.go
-</code></pre>
+```
 
-<p><strong>Complete documentation is available at <a href="https://gohugo.io/overview/introduction/">Hugo Documentation</a>.</strong></p>
+**Complete documentation is available at [Hugo Documentation][].**
 
-<p><a href="https://github.com/igrigorik/ga-beacon"><img src="https://ga-beacon.appspot.com/UA-7131036-6/hugo/readme" alt="Analytics" /></a>
-<a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/spf13/hugo/trend.png" alt="Bitdeli Badge" /></a>    
+[![Analytics](https://ga-beacon.appspot.com/UA-7131036-6/hugo/readme)](https://github.com/igrigorik/ga-beacon)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/spf13/hugo/trend.png)](https://bitdeli.com/free &#34;Bitdeli Badge&#34;)
+
+[Go]: https://golang.org/
+[Hugo Documentation]: https://gohugo.io/overview/introduction/
+    
     </div> 
   
   </main> 
